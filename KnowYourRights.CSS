@@ -29,10 +29,28 @@ height:298px;
 float:right;
 opacity:0.3;
 }
-p{
+#f{
 padding-top:50px;
 padding-left:40px;
 font-size:30px;
+color:#3b4bf7;  
 }
+.third
+{
+padding-top:10px;
+width:1350px;
+height:300px;
+}
+h2
+{
+padding-left:40px;
+}
+p
+{
+padding-left:60px;
+font-size:20px;
+padding-right:50px;
+}
+
 
 
