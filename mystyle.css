@@ -1,5 +1,6 @@
 .header{
-	padding-bottom: 1px;
+       margin-top: -18px;
+	padding-bottom: 1.5px;
 	background: #80BFFF;
 	
 }
@@ -11,12 +12,12 @@ h2{
        color: #000080;
 }
 .content{
-	height: 1500px;
+	height: 1800px;
 
 }
 .footer{
-	padding-top: 15px;
-	background: #CCEEFF;
+	padding-top: 10px;
+       background-color: #CCEEFF;
 	color: #000080;
 	width: 1330px;
        height:180px;    
@@ -49,6 +50,7 @@ video{
        background-image:url("martinlutherking.jpg");
        background-size:cover;
        background-position:center; 
+        
 }
 #second{
        background-image:url("mandela.jpg");
@@ -63,7 +65,7 @@ video{
 .outer{
        width:1330px;
        height:280px;
-       margin-top:330px;
+       margin-top:280px;
        display:flex; //inner  
 }
 .inner{
@@ -131,4 +133,82 @@ h1{
 p{
        font-size: 18px;
        font-family: sans-serif;
+}
+
+.row{
+       width:1330px;
+       height:200px;
+       margin-top:150px;
+       display:flex; //inner
+}
+.column {
+       width:332px;
+       height:200px;
+       text-align: center;
+       font-family: sans-serif;
+       font-size: 20px;
+}
+#col1{
+       
+       background-image:url("guide.png");
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: 70px;
+       background-color: #809FFF;
+       padding-top: 50px;
+       margin-left: 20px;
+       margin-right: 20px;
+       cursor: pointer;
+       color: #000066;
+}
+#col1:hover{
+       background-color: #3366FF;
+}
+
+#col2{
+       background-image:url("advice.png");
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: 70px;
+       background-color: #809FFF;
+       padding-top: 50px;
+       margin-left: 20px;
+       margin-right: 20px;
+       cursor: pointer;
+       color: #000066;
+}
+#col2:hover{
+       background-color: #3366FF;
+}
+
+#col3{
+       background-image:url("talk.png");
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: 65px;
+       background-color: #809FFF;
+       padding-top: 50px;
+       margin-left: 20px;
+       margin-right: 20px;
+       cursor: pointer;
+       color: #000066;
+}
+#col3:hover{
+       background-color: #3366FF;
+} 
+
+#col4{
+       background-image:url("policy.png");
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: 60px;
+       background-color: #809FFF;
+       padding-top: 50px;
+       margin-left: 20px;
+       margin-right: 20px;
+       cursor: pointer;
+       color: #000066;
+}
+#col4:hover{
+       background-color: #3366FF;
 }
