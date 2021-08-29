@@ -1,0 +1,53 @@
+<html>
+<head>
+ <script type="text/javascript">
+   function validate()
+   {
+     var name=document.form.fname.value;
+     var Email=document.form.em.value;
+     var agreement=document.form.agree.checked;
+     var Mobile=document.form.mobile.value;
+     var Text=document.getElementById("txtarea").value;
+     var submit1=document.form.sub.onsubmit;
+     
+     if(name=="" || Email=="" || Mobile=="" || Text=="")
+       {
+        alert("Please enter all details to continue");
+        return false; 
+       }
+     if(!agreement)
+      {
+        alert("Please agree to the terms and conditions");
+        return false;
+      }
+      if(!Email.includes('.','@'))
+      {
+        alert("Invalid Email");
+        return false;
+      }
+      if(Mobile.length!=10 || isNaN(Mobile))
+      {
+        alert("Invalid Mobile Number");
+        return false;
+      }
+      if(submit1==onsubmit)
+      {
+        alert("Form submitted!");
+        return true;
+      }
+   }
+ </script>
+</head>
+<body>
+<form name="form" onsubmit="return validate()">
+<h2 align="center">Please fill the form below for Support and Advice</h2> <br><br>
+Name <input type="text" name="fname"><br><br>
+E-mail <input type="text" name="em"><br><br>
+Mobile Number <input type="text" name="mobile"> <br><br>
+Mention a brief description regarding your issue:<br> <textarea rows=5 cols=38 id="txtarea"></textarea><br><br>
+<input type="checkbox" name="agree">I agree to the terms and conditions<br><br>      
+<input type="submit" value="Submit" name="sub" onClick="validate();">
+<input type="button" value="Cancel">
+<h4 align="center">Once you submit the form, We will be arranging a meeting to discuss your issue and provide you with our best support and advice. You will receive an email with all the details of the meeting.</h4>
+</body>
+</html>
