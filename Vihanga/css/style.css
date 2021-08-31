@@ -41,6 +41,21 @@ a{
  ul{
      list-style-type: none;
  }
+ h1{
+    font-family: var(--Lexend);
+    font-size:4.5rem;
+}
+
+h3{
+    font-family: var(--Abel);
+    font-size: 1.7rem;
+}
+
+h2{
+    font-family: var(--Lexend);
+}
+
+
 
 /*------------x-------------Global Classes-------x------------*/
 
@@ -128,6 +143,37 @@ a{
     }
 
 /*-------------x-------------navBar-------------x---------*/
+
+
+/*--------------------------Main Content-----------------*/
+
+    /*-------------Site Title----------------*/
+    main .site-title{
+        background:url("../assets/Newsedit.png");
+        background-size: cover;
+        
+        /*--center title--*/
+        display:flex;
+        justify-content: center;
+    }
+
+    main .site-title .site-background{
+        /**title padding**/
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        text-align: center;
+        color:var(--white);
+    }
+
+    main .site-title h1, h3{
+        margin:.1rem;
+    }
+
+   
+
+    /*------x-------Site Title------x----------*/
+
+/*--------------x------------Main Content----------x-------*/
 
 
 /*---------------Viewport less than or equal to 750px----------*/
