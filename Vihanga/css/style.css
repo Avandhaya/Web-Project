@@ -62,7 +62,7 @@ h2{
 /*--------------------------navBar----------------------*/
 
 .nav{
-    background:var(--sky);
+    background:var(--white);
     padding:0 2rem;
     height: 0rem;
     min-height: 10vh;
@@ -114,7 +114,7 @@ h2{
 
     /*------when mouse click navigation items, change bg color-----*/ 
     .nav .nav-items .nav-link:hover{
-        background-color: var(--text-light);
+        background-color: #4895ef;
     }
         /*----whwhen mouse click navigation items change text color(white)-----*/
     .nav .nav-items .nav-link:hover a{
