@@ -10,7 +10,7 @@
      var Email=document.form.em.value;
      var agreement=document.form.agree.checked;
      var Mobile=document.form.mobile.value;
-     var Text=document.getElementById("txtarea").value;
+     var Text=document.form.des.value;
      var submit1=document.form.sub.onsubmit;
      
      if(name=="" || Email=="" || Mobile=="" || Text=="")
@@ -101,15 +101,22 @@ input[type=text], input[type=text]{
 
 </head>
 <body>
-<form name="form" class="container" onsubmit="return validate()">
+<form action="advice.php" method="POST" name="form" class="container" onsubmit="return validate()">
 <h2 align="center">Please fill the form below for Support and Advice</h2></legend> <br><br>
 Name <input type="text" name="fname"><br><br>
+
 E-mail <input type="text" name="em"><br><br>
-Mobile Number <input type="text" name="mobile"> <br><br>
-Mention a brief description regarding your issue:<br> <textarea rows=5 cols=60 id="txtarea"></textarea><br><br>
-<input type="checkbox" name="agree">  I agree to the terms and conditions<br><br>      
+
+Phone Number <input type="text" name="mobile"> <br><br>
+
+Mention a brief description regarding your issue:<br> <textarea rows=5 cols=60 id="txtarea" name="des"></textarea><br><br>
+
+<input type="checkbox" name="agree">  I agree to the terms and conditions<br><br>   
+
 <input type="submit" class="btn1" value="Submit" name="sub" onClick="validate();">
+
 <input type="reset" class="btn2" value="Cancel">
+
 <h4 align="center">Once you submit the form, we will be arranging a meeting to discuss your issue and provide you with our best support and advice. You will receive an email with all the details of the meeting.</h4>
 
 </form>
