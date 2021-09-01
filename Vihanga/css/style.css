@@ -43,7 +43,9 @@ a{
  }
  h1{
     font-family: var(--Abel);
-    font-size:5.5rem;
+    font-size:6.5rem;
+    text-shadow: 0 6px 11px #000000;
+   
 }
 
 h3{
@@ -54,6 +56,23 @@ h3{
 h2{
     font-family: var(--Lexend);
 }
+
+span{
+    font-family: var(--Abel);
+}
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding:1rem 3rem;
+    font-size:1rem;
+    font-family: var(--Abel);
+    cursor: pointer;
+}
+.container{
+    margin: 0 5vw;
+}
+
+
 
 
 
@@ -180,6 +199,63 @@ h2{
    
 
     /*------x-------Site Title------x----------*/
+
+    /*-----------------Blog Carousel------------------*/
+
+    main .blog{
+        background: url("../assets/Abract0.png");
+        background-repeat: no-repeat;
+        background-position: right;
+        height: 100vh;
+        width: 100%;
+        background-size: 65%;
+    }
+    main .blog .blog-post{
+        padding-top: 6rem;
+    }
+    main .blog2 .blog-post{
+        
+        position:relative;
+        top:-80px;
+    }
+
+    main .blog-post .blog-content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 80%;
+        margin:3rem 2rem;
+        box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+    }
+
+    main .blog-content .blog-title{
+        padding: 2rem 0;
+    }
+     main .blog-content .btn-blog{
+         padding: .7rem 2rem;
+         background:var(--sky);
+         margin: .5rem;
+     }
+
+    main .blog-content span{
+        display: block;
+    }
+    
+
+    
+
+    /*--when mouse come to box, it change color*/
+    main .blog-post .blog-content:hover{
+        
+        box-shadow: 0 15px 20px #4cc9f0;
+        
+        /*text color*/
+        color:#1656df;
+        
+    }
+
+
+    /*-------x----------Blog Carousel--------x----------*/
 
 /*--------------x------------Main Content----------x-------*/
 
