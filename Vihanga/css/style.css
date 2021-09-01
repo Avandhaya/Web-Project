@@ -125,6 +125,7 @@ h2{
 .nav .nav-brand a{
     font-size: 1.6rem;
     padding: 1rem 0;
+    color:var(--white);
     display: block;
     font-family:var(--Lexendl);
     font-size:1.6rem;
@@ -140,6 +141,13 @@ h2{
     
 .nav .social i:hover{
         color: #a1c4cf;
+    }
+
+    .logo{
+        position:absolute;
+        top: 0px;
+        margin-top: .5rem;
+        margin-left: 1rem;
     }
 
 /*-------------x-------------navBar-------------x---------*/
