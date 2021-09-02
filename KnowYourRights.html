@@ -1,6 +1,12 @@
 <html>
   <head>
-   <link rel="stylesheet" type="text/CSS" href="KnowYourRights.CSS"> 
+   <link rel="stylesheet" type="text/CSS" href="KnowYourRights.CSS">
+    <script> 
+      function popup()
+      {
+         window.open("contactform.html","ad", "width=500,height=500");
+      }
+    </script>
   </head>
   <body>
     <div class="first"><h1>Know Your Rights</h1></div>
@@ -37,7 +43,7 @@
    </div>
    <div class="footer">
       <h3>Contact Our Team For More Information</h3>
-      <button id="button">Contact Us</button>
+      <button id="button" onclick="popup();">Contact Us</button> 
    </div>
   </body>
 </html>
