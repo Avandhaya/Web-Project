@@ -1,6 +1,6 @@
 body{
 width:1350px;
-height:1800px;
+height:2500px;
 }
 .header{
 width:1335px;
@@ -11,21 +11,24 @@ background-color:#bde2f2;
 {
 padding-top:10px;
 margin-top:0px;  
-width:1350px;
-height:300px;
-background-color:#010133;
+width:1335px;
+height:500px;
+background-image:url("human1.jpg");
+background-repeat:no-repeat;
+background-size:1335px 555px;
 }
 h1
 {
 color:#818a84;
 padding-top:140px;
 padding-left:60px;
-font-size:60px;
+font-size:80px;
+text-align:center;  
 }
 .second
 {
 padding-top:10px;
-width:1350px;
+width:1335px;
 height:300px;
 background-color:#bde2f2;
 }
@@ -45,7 +48,7 @@ color:#3b4bf7;
 .third
 {
 padding-top:10px;
-width:1350px;
+width:1335px;
 height:300px;
 }
 h2
@@ -70,7 +73,7 @@ margin-top:1700px;
 padding-left: 5px;
 background-color: #000024;
 width: 1335px;
-height:150px;    
+height:200px;    
 }
 #button{
 background-color: #4DB8FF;
