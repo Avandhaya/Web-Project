@@ -51,6 +51,7 @@ a{
 h3{
     font-family: var(--Abel);
     font-size: 1.7rem;
+    
 }
 
 h2{
@@ -59,6 +60,8 @@ h2{
 
 span{
     font-family: var(--Abel);
+    margin: 1rem;
+    align-content: center;
 }
 button.btn{
     border: none;
@@ -67,6 +70,8 @@ button.btn{
     font-size:1rem;
     font-family: var(--Abel);
     cursor: pointer;
+    color:#4895ef;
+    
 }
 .container{
     margin: 0 5vw;
@@ -85,7 +90,7 @@ p{
 /*--------------------------navBar----------------------*/
 
 .nav{
-    background:var(--white);
+    background:white;
     padding:0 2rem;
     height: 0rem;
     min-height: 10vh;
@@ -124,6 +129,7 @@ p{
     .nav .nav-items{
         display:flex;
         margin:0;
+        
     }
 
  
@@ -133,6 +139,7 @@ p{
         position:relative;
         font-family:var(--Josefi);
         font-size: 1.1rem;
+        
     }
 
     /*------when mouse click navigation items, change bg color-----*/ 
@@ -155,16 +162,7 @@ p{
     
 }
 
-.nav .social{
-         padding: 1.4rem 0;       
-    }
- .nav .social i{
-        padding: 0 .2rem;
-    }
-    
-.nav .social i:hover{
-        color: #a1c4cf;
-    }
+
 
     .logo{
         position:absolute;
@@ -229,16 +227,22 @@ p{
         text-align: center;
         width: 80%;
         margin:3rem 2rem;
-        box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+        background-color:#f8f9fa;
+        
+        border-radius: 8px;
+        border: 1px solid #E8EEE4;  
+    }
+    main .blog-post .blog-content span{
+        text-align: left;
     }
 
     main .blog-content .blog-title{
         padding: 2rem 0;
     }
      main .blog-content .btn-blog{
-         padding: .7rem 2rem;
-         background:var(--sky);
-         margin: .5rem;
+         padding: .5rem 2rem;
+         
+         margin: .2rem;
      }
 
     main .blog-content span{
@@ -249,14 +253,80 @@ p{
     
 
     /*--when mouse come to box, it change color*/
-    main .blog-post .blog-content:hover{
+    main .blog-post .blog-content h3:hover{
         
-        box-shadow: 0 15px 20px #4cc9f0;
+      
         
         /*text color*/
-        color:#1656df;
+        color:#4895ef;
         
     }
+    main .blog-post .blog-content:hover{
+        box-shadow: 0 8px 12px rgba(154, 159, 151, 0.2);
+
+    }
+
+    .btn-blog:hover{
+        box-shadow: 0 8px 12px rgba(154, 159, 151, 0.2);
+        background:var(--sky);
+        color: white;
+    }
+
+    .nav1 {
+        
+        margin-left: 34rem;
+        
+    }
+    /*-- get the page num side by side */
+    .nav1 .nav-items{
+        display:flex;
+        margin:0;
+        
+    }
+    .nav1 .nav-items .nav-link{
+        content: center;
+        padding:.7rem .7rem;
+        margin-left: 1rem;
+        position: relative;
+        top:-5rem;
+        font-size: 1.1rem;
+        position:relative;
+        font-family:var(--Josefi);
+        font-size: 1.1rem;
+        border-style: solid;
+        border-width: medium;
+        border-radius: 8px;
+        border: 1px solid #E8EEE4;  
+    }
+    .nav1 .nav-items .nav-link1{
+        background-color: #4895ef;
+        content: center;
+        padding:.7rem .7rem;
+        margin-left: 1rem;
+        position: relative;
+        top:-5rem;
+        font-size: 1.1rem;
+        position:relative;
+        font-family:var(--Josefi);
+        font-size: 1.1rem;
+        border-style: solid;
+        border-width: medium;
+        border-radius: 8px;
+        border: 1px solid #E8EEE4;
+    }
+    .nav1 .nav-items .nav-link1 a{
+        color:var(--white);
+    }
+    /*------when mouse click page num items, change bg color-----*/ 
+    .nav1 .nav-items .nav-link:hover{
+        background-color: #4895ef;
+    }
+        /*----whwhen mouse click page num items change text color(white)-----*/
+    .nav1 .nav-items .nav-link:hover a{
+        color: var(--white);
+    }
+/*-------x----when mouse click page num items, change bg color-------x-----*/
+   
 
 
     /*-------x----------Blog Carousel--------x----------*/
