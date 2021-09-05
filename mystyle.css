@@ -2,6 +2,7 @@ a{
     text-decoration: none;
     color:#3f4954; 
 }
+<<<<<<< Updated upstream
 .navmenu{
         display:flex;     
         margin-bottom: -3px;
@@ -48,6 +49,12 @@ h2{
        padding-top: 20px;
        text-align: center;
        font-size: 30px;
+=======
+h1{
+	padding-bottom: -5px;
+	padding-top: 20px;
+	text-align: center;
+>>>>>>> Stashed changes
        color: #000080;
 }
 .content{
@@ -170,15 +177,26 @@ background:rgba(255,255,255,0.35);
    text-shadow: 3px 3px 6px white;
 background:rgba(255,255,255,0.25);
 }
+<<<<<<< Updated upstream
 
 
 h1{
+=======
+.top{
+       background-image:url("hr3.jpg");
+       background-size:cover; 
+       background-position:center;  
+       width:1330px;
+       height:350px;
+       margin-top: -28px;
+}
+h2{
+>>>>>>> Stashed changes
        font-size: 45px;
        color: white;
        padding-bottom: -5px;
        padding-top: 60px;
        text-align: center;
-       font-family: sans-serif; 
 }
 p{
        font-size: 20px;
@@ -255,6 +273,7 @@ p{
 }
 
 #col3{
+<<<<<<< Updated upstream
        
        background-repeat: no-repeat;
        background-position: center;
@@ -351,3 +370,19 @@ p{
        padding: 30px;
        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+=======
+       background-image:url("policy.png");
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: 60px;
+       background-color: #809FFF;
+       padding-top: 50px;
+       margin-left: 20px;
+       margin-right: 20px;
+       cursor: pointer;
+       color: #000066;
+}
+#col3:hover{
+       background-color: #3366FF;
+}
+>>>>>>> Stashed changes
