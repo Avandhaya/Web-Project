@@ -4,7 +4,7 @@
 	<center>
 		<?php
 
-		$conn = mysqli_connect("localhost", "root", "", "advice");
+		$conn = mysqli_connect("localhost", "root", "", "contact");
 		
 		if($conn === false){
 			die("ERROR: Could not connect. "

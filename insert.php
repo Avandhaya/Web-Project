@@ -1,23 +1,16 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-	
-</head>
-
 <body>
 	<center>
 		<?php
 
 		$conn = mysqli_connect("localhost", "root", "", "contact");
 		
-		// Check connection
 		if($conn === false){
 			die("ERROR: Could not connect. "
 				. mysqli_connect_error());
 		}
 		
-		// Taking all 5 values from the form data(input)
 		$name = $_REQUEST['name'];
 		$email = $_REQUEST['email'];
 		$message = $_REQUEST['message'];
@@ -37,7 +30,6 @@
 				. mysqli_error($conn);
 		}
 		
-		// Close connection
 		mysqli_close($conn);
 		?>
 	</center>
