@@ -99,18 +99,18 @@ video{
 }
 
 #first{
-       background-image:url("../assets/martinlutherking.jpg"); 
+       background-image:url("../resources/martinlutherking.jpg"); 
        background-size:cover;
        background-position:center; 
         
 }
 #second{
-       background-image:url("../assets/mandela.jpg");
+       background-image:url("../resources/mandela.jpg");
        background-size:cover;  
        background-position:center;  
 }
 #third{
-       background-image:url("../assets/eleanor.jpg");
+       background-image:url("../resources/eleanor.jpg");
        background-size:cover; 
        background-position:center; 
 
@@ -195,7 +195,7 @@ p{
        height:300px;
        margin-top:20px;
        
-       display:flex; //inner
+       display:flex; /*inner*/
 }
 .column {
        width:380px;
@@ -304,20 +304,20 @@ p{
 }
 
 #id1{
-       background-image:url("../assets/bgimg1.jpg");
+       background-image:url("../resources/bgimg1.jpg");
        background-size:cover;
        background-position:center; 
        
 }
 #id2{
-       background-image:url("../assets/hrimg.jpg");
+       background-image:url("../resources/hrimg.jpg");
        background-size:cover;  
        background-position:center;  
 
             
 }
 #id3{
-       background-image:url("../assets/hrimg2.jpg");
+       background-image:url("../resources/hrimg2.jpg");
        background-size:cover; 
        background-position:left; 
        float:right;    
@@ -325,7 +325,7 @@ p{
 }
 
 #id5{
-       background-image:url("../assets/hrimg4.jpg");
+       background-image:url("../resources/hrimg4.jpg");
        background-size:cover;  
        background-position:center;  
 }

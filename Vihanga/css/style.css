@@ -260,6 +260,9 @@ p{
         display: block;
         
     }
+    .blog2 .blog-content .blog-title{
+        margin: 0rem .2rem;
+    }
     
 
     
@@ -270,7 +273,8 @@ p{
         color:#4895ef;  
     }
     main .blog-post .blog-content:hover{
-        box-shadow: 3px 8px 12px rgba(154, 159, 151, 0.2);
+        box-shadow: 1px 3.5px 8px 4px rgba(154, 159, 151, 0.2);
+        
 
     }
     /* --button---*/
