@@ -61,7 +61,8 @@ h2{
 span{
     font-family: var(--Abel);
     margin: 1rem;
-    align-content: center;
+    align-content: left;
+    
 }
 button.btn{
     border: none;
@@ -71,6 +72,8 @@ button.btn{
     font-family: var(--Abel);
     cursor: pointer;
     color:#4895ef;
+    
+    
     
 }
 .container{
@@ -91,16 +94,21 @@ p{
 
 .nav{
     background:white;
-    padding:0 2rem;
+    padding:0rem 0rem;
     height: 0rem;
     min-height: 10vh;
     overflow: hidden;
     /* when click the toggle menu diplay down one by one*/
     transition: height 1s ease-in-out;
+    
+    
+    
     }
 
     .nav .nav-menu{
         justify-content: space-between;
+        
+       
     }
 /*-------------collapse-----------*/
     .nav .toggle-collapse{
@@ -126,6 +134,7 @@ p{
         height: 30rem;
     }
     /*------x-------collapse------x-----*/
+    
     .nav .nav-items{
         display:flex;
         margin:0;
@@ -139,6 +148,7 @@ p{
         position:relative;
         font-family:var(--Josefi);
         font-size: 1.1rem;
+        
         
     }
 
@@ -230,23 +240,25 @@ p{
         background-color:#f8f9fa;
         
         border-radius: 8px;
-        border: 1px solid #E8EEE4;  
+        border: 1px solid #E8EEE4; 
+        transition-duration: 0.3s; 
     }
     main .blog-post .blog-content span{
         text-align: left;
+        justify-content: center;
     }
 
     main .blog-content .blog-title{
         padding: 2rem 0;
     }
      main .blog-content .btn-blog{
-         padding: .5rem 2rem;
-         
-         margin: .2rem;
+        padding: .5rem 2rem;
+        margin: .2rem;   
      }
-
+     
     main .blog-content span{
         display: block;
+        
     }
     
 
@@ -254,21 +266,25 @@ p{
 
     /*--when mouse come to box, it change color*/
     main .blog-post .blog-content h3:hover{
-        
-      
-        
         /*text color*/
-        color:#4895ef;
-        
+        color:#4895ef;  
     }
     main .blog-post .blog-content:hover{
-        box-shadow: 0 8px 12px rgba(154, 159, 151, 0.2);
+        box-shadow: 3px 8px 12px rgba(154, 159, 151, 0.2);
 
     }
+    /* --button---*/
 
     .btn-blog:hover{
+        
         box-shadow: 0 8px 12px rgba(154, 159, 151, 0.2);
-        background:var(--sky);
+        
+        
+        background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+        
+        
+    }
+    .blog-title :hover a{
         color: white;
     }
 
@@ -277,6 +293,7 @@ p{
         margin-left: 34rem;
         
     }
+    
     /*-- get the page num side by side */
     .nav1 .nav-items{
         display:flex;
@@ -337,7 +354,7 @@ p{
 
 footer.footer{
     height: 100%;
-    background: var(--bg-color);
+    background:rgb(27, 27, 27);
     position: relative;
 }
 
