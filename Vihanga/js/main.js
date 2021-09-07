@@ -9,6 +9,15 @@ $(document).ready(function() {
         $nav.toggleClass('collapse');
     })
 
+    /**Change Navigation Bar Styles After Scrolling */
+            /*select window objects*/
+    window.addEventListener('scroll', function () {
+        /*create the variable header*/
+        let header = document.querySelector('header');
+        let windowPosition = window.scrollY > 0;
+        header.classList.toggle('scrolling-active', windowPosition);
+    })
+
     //owl-carsousel for blog
     $('.owl-carousel').owlCarousel({
         loop:true,

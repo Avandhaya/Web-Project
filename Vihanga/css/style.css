@@ -92,23 +92,49 @@ p{
 
 /*--------------------------navBar----------------------*/
 
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: background-color .5s ease;
+    
+    z-index: 1000;
+}
+/* we can use header padding,margin*/
+.container{
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0rem 0rem;
+}
+/*x we can use header padding,margin*/
+
 .nav{
-    background:white;
-    padding:0rem 0rem;
-    height: 0rem;
+    
+    padding:0rem 0rem 0rem 0rem;
+    height: 5.1rem;
+    margin-top: 0rem;
     min-height: 10vh;
     overflow: hidden;
-    /* when click the toggle menu diplay down one by one*/
+    transition: height 1s ease;
+    transition: margin .5s ease;
+    
+    
+   
+    
+    
+    /* when click the toggle icon diplay down one by one*/
     transition: height 1s ease-in-out;
-    
-    
-    
     }
 
     .nav .nav-menu{
-        justify-content: space-between;
         
-       
+        justify-content: space-between;  
+    }
+
+    .nav .nav-items .nav-link a{
+        color: var(--white);
     }
 /*-------------collapse-----------*/
     .nav .toggle-collapse{
@@ -127,44 +153,64 @@ p{
 
     .nav .toggle-collapse .toggle-icons i{
         font-size: 1.4rem;
-        color: var(--text-gray)
+        color: var(--bg-color)
+        
     }
 
     .collapse{
         height: 30rem;
     }
     /*------x-------collapse------x-----*/
-    
     .nav .nav-items{
+        
         display:flex;
         margin:0;
-        
     }
 
  
     .nav .nav-items .nav-link{
-        padding:1.6rem 1rem;
+        
+        padding:2rem 1rem 2rem 1rem;
+        
         font-size: 1.1rem;
         position:relative;
         font-family:var(--Josefi);
         font-size: 1.1rem;
-        
-        
+    }
+    .nav-link::after{
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        bottom: 3px;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform .5s ease;
+    }
+    
+    .nav-link:hover::after{
+        transform: scaleX(1);
     }
 
     /*------when mouse click navigation items, change bg color-----*/ 
     .nav .nav-items .nav-link:hover{
-        background-color: #4895ef;
+        
+        background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+        
+        
     }
-        /*----whwhen mouse click navigation items change text color(white)-----*/
+        /*----when mouse click navigation items change text color(white)-----*/
     .nav .nav-items .nav-link:hover a{
-        color: var(--white);
+        color: var(--text-gray);
     }
 /*-------x----when mouse click navigation items, change bg color-------x-----*/
 
 .nav .nav-brand a{
     font-size: 1.6rem;
     padding: 1rem 0;
+    margin-right: 7rem;
     color:var(--white);
     display: block;
     font-family:var(--Lexendl);
@@ -172,21 +218,68 @@ p{
     
 }
 
+/*Apply styles after scroll*/
+/*Apply styles after scroll*/
+.scrolling-active{
+    background-color: #fff;
+    box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+}
+
+.scrolling-active .nav{
+    height: 4.5rem;
+    margin-top: -1rem;
+    
+}
+.scrolling-active .nav .nav-items .nav-link{
+    padding: 1.7rem 1rem;
+}
+
+.scrolling-active .nav .nav-items .nav-link a{
+    color: var(--text-gray);
+}
+.scrolling-active .nav a{
+    color: #313131;
+}
+.scrolling-active .nav img{
+    width: 20%;
+    height: auto;
+    transition: width .5s ease;
+}
+
+
+
+
+.scrolling-active .nav-link::after{
+    background-color: #313131;
+    
+}
+
+/*Apply styles after scroll end*/
+
+
+/*Apply styles after scroll end*/
+
+
+
 
 
     .logo{
+        
         position:absolute;
+        
         top: 0px;
         margin-top: .5rem;
         margin-left: 1rem;
+        
     }
-
 /*-------------x-------------navBar-------------x---------*/
 
 
 /*--------------------------Main Content-----------------*/
 
     /*-------------Site Title----------------*/
+    
+   
     main .site-title{
         background:url("../assets/Newsedit.png");
         background-size: cover;
@@ -215,12 +308,11 @@ p{
     /*-----------------Blog Carousel------------------*/
 
     main .blog{
-        background: url("../assets/Abract0.png");
-        background-repeat: no-repeat;
-        background-position: right;
+       
         height: 100vh;
         width: 100%;
         background-size: 65%;
+        margin-left: 1.6rem;
     }
     main .blog .blog-post{
         padding-top: 6rem;
@@ -229,6 +321,7 @@ p{
         
         position:relative;
         top:-80px;
+        margin-left: 1.6rem;
     }
 
     main .blog-post .blog-content{
@@ -264,6 +357,7 @@ p{
         margin: 0rem .2rem;
     }
     
+    
 
     
 
@@ -282,11 +376,7 @@ p{
     .btn-blog:hover{
         
         box-shadow: 0 8px 12px rgba(154, 159, 151, 0.2);
-        
-        
-        background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
-        
-        
+        background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);    
     }
     .blog-title :hover a{
         color: white;
@@ -298,43 +388,7 @@ p{
         
     }
     
-    /*-- get the page num side by side */
-    .nav1 .nav-items{
-        display:flex;
-        margin:0;
-        
-    }
-    .nav1 .nav-items .nav-link{
-        content: center;
-        padding:.7rem .7rem;
-        margin-left: 1rem;
-        position: relative;
-        top:-5rem;
-        font-size: 1.1rem;
-        position:relative;
-        font-family:var(--Josefi);
-        font-size: 1.1rem;
-        border-style: solid;
-        border-width: medium;
-        border-radius: 8px;
-        border: 1px solid #E8EEE4;  
-    }
-    .nav1 .nav-items .nav-link1{
-        background-color: #4895ef;
-        content: center;
-        padding:.7rem .7rem;
-        margin-left: 1rem;
-        position: relative;
-        top:-5rem;
-        font-size: 1.1rem;
-        position:relative;
-        font-family:var(--Josefi);
-        font-size: 1.1rem;
-        border-style: solid;
-        border-width: medium;
-        border-radius: 8px;
-        border: 1px solid #E8EEE4;
-    }
+    
     .nav1 .nav-items .nav-link1 a{
         color:var(--white);
     }
@@ -356,83 +410,92 @@ p{
 
 /* ----------------- Footer --------------------- */
 
-footer.footer{
-    height: 100%;
-    background:rgb(27, 27, 27);
+.footer {
+    
+      
     position: relative;
+    margin-top: 45px;
+    padding-top: 90px;
+    background-image: url("../assets/footer.png");
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-footer.footer .container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+.footer .footer-row{
+    display:flex;
 }
 
-footer.footer .container > div{
-    flex-grow: 1;
-    flex-basis: 0;
-    padding: 3rem .9rem;
+
+.footer .footer-contact,
+.footer .footer-link,
+.footer .footer-newsletter {
+    position: relative;
+    margin-bottom:40px;
+    color: #ffffff;
+    
 }
 
-footer.footer .container h2{
-    color: var(--white);
+.footer .footer-contact h2,
+.footer .footer-link h2,
+.footer .footer-newsletter h2 {
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #0d0f8a;
+    
 }
 
-footer.footer .newsletter .form-element{
-    background: black;
-    display: inline-block;
+.footer .footer-link a {
+    display: block;
+    margin-bottom: 10px;
+    color: #ffffff;
+    transition: .3s;
+    
 }
 
-footer.footer .newsletter .form-element input{
-    padding: .5rem .7rem;
+.footer .footer-link a::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .footer-link a:hover {
+    color: #0d0f8a;
+    letter-spacing: 1px;
+}
+
+.footer .footer-contact p i {
+    width: 25px;
+}
+
+.footer .footer-newsletter form {
+    position: relative;
+    width: 100%;
+}
+
+.footer .footer-newsletter input {
+    margin-bottom: 15px;
+    height: 60px;
     border: none;
-    background: transparent;
-    color: white;
-    font-family: var(--Josefin);
-    font-size: 1rem;
-    width: 74%;
+    border-radius: 0;
 }
 
-footer.footer .newsletter .form-element span{
-    background: var(--sky);
-    padding: .5rem .7rem;
-    cursor: pointer;
+.footer .footer-newsletter label {
+    margin-top: 5px;
+    color: #777777;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 
-footer.footer .instagram div > img{
-    display: inline-block;
-    width: 25%;
-    height: 50%;
-    margin: .3rem .4rem;
+.footer .footer-newsletter .btn.btn-custom {
+    width: 100%;
+    padding: 15px 0;
 }
 
-footer.footer .follow div i{
-    color: var(--white);
-    padding: 0 .4rem;
-}
 
-footer.footer .rights{
-    justify-content: center;
-    font-family: var(--Josefin);
-}
-
-footer.footer .rights h4 a{
-    color: var(--white);
-}
-
-footer.footer .move-up{
-    position: absolute;
-    right: 6%;
-    top: 50%;
-}
-
-footer.footer .move-up span{
-    color: var(--midnight);
-}
-
-footer.footer .move-up span:hover{
-    color: var(--white);
-    cursor: pointer;
-}
 
 /* ---------x------- Footer ----------x---------- */
 
@@ -442,7 +505,13 @@ footer.footer .move-up span:hover{
 @media only screen and (max-width:750px){
     /*when equal to 750px menu go to left side colum;(collapse)*/
     .nav .nav-menu, .nav .nav-items{
+        
+        margin-top: -2rem;
         flex-direction:column;
+    }
+    .nav .nav-menu{
+        margin-top: 5.3rem;
+        background-color: rgb(167, 167, 167);
     }
 
     .nav .toggle-collapse{

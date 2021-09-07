@@ -61,19 +61,46 @@ h2{
 
 /*--------------------------navBar----------------------*/
 
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: background-color .5s ease;
+    
+    z-index: 1000;
+}
+/* we can use header padding,margin*/
+.container{
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0rem 0rem;
+}
+/*x we can use header padding,margin*/
+
 .nav{
-    background:var(--white);
-    padding:0rem 0rem 1rem 0rem;
-    height: 0rem;
+    
+    padding:0rem 0rem 0rem 0rem;
+    height: 5.1rem;
+    margin-top: 0rem;
     min-height: 10vh;
     overflow: hidden;
+    transition: height .5s ease;
+    transition: margin .5s ease;
+    
+    
+    box-shadow: 0 8px 12px rgba(154, 159, 151, 0.2);
+    
+    
     /* when click the toggle menu diplay down one by one*/
     transition: height 1s ease-in-out;
     }
 
     .nav .nav-menu{
+        
         justify-content: space-between;
-        box-shadow: 0 8px 12px rgba(154, 159, 151, 0.2);
+       
         
     }
 /*-------------collapse-----------*/
@@ -93,7 +120,8 @@ h2{
 
     .nav .toggle-collapse .toggle-icons i{
         font-size: 1.4rem;
-        color: var(--text-gray)
+        color: var(--bg-color)
+        
     }
 
     .collapse{
@@ -101,17 +129,36 @@ h2{
     }
     /*------x-------collapse------x-----*/
     .nav .nav-items{
+        
         display:flex;
         margin:0;
     }
 
  
     .nav .nav-items .nav-link{
-        padding:1.6rem 1rem;
+        
+        padding:2rem 1rem 2rem 1rem;
+        
         font-size: 1.1rem;
         position:relative;
         font-family:var(--Josefi);
         font-size: 1.1rem;
+    }
+    .nav-link::after{
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        bottom: 3px;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform .5s ease;
+    }
+    
+    .nav-link:hover::after{
+        transform: scaleX(1);
     }
 
     /*------when mouse click navigation items, change bg color-----*/ 
@@ -137,10 +184,53 @@ h2{
     
 }
 
+/*Apply styles after scroll*/
+/*Apply styles after scroll*/
+.scrolling-active{
+    background-color: #fff;
+    box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+}
+
+.scrolling-active .nav{
+    height: 4.5rem;
+    margin-top: -1rem;
+    
+}
+.scrolling-active .nav .nav-items .nav-link{
+    padding: 1.7rem 1rem;
+}
+
+
+.scrolling-active .nav a{
+    color: #313131;
+}
+.scrolling-active .nav img{
+    width: 20%;
+    height: auto;
+    transition: width .5s ease;
+}
+
+
+
+
+.scrolling-active .nav-link::after{
+    background-color: #313131;
+    
+}
+
+/*Apply styles after scroll end*/
+
+
+/*Apply styles after scroll end*/
+
+
+
 
 
     .logo{
+        
         position:absolute;
+        
         top: 0px;
         margin-top: .5rem;
         margin-left: 1rem;
@@ -154,6 +244,7 @@ h2{
 .heading{
     
     text-align: center;
+    margin-top: 6rem;
 }
 
  .title h2{
@@ -191,6 +282,7 @@ h2{
 @media only screen and (max-width:750px){
     /*when equal to 750px menu go to left side colum;(collapse)*/
     .nav .nav-menu, .nav .nav-items{
+        position:relative;
         flex-direction:column;
         padding-top: .6rem;
     }
