@@ -119,12 +119,7 @@ header{
     overflow: hidden;
     transition: height 1s ease;
     transition: margin .5s ease;
-    
-    
-   
-    
-    
-    /* when click the toggle icon diplay down one by one*/
+  /* when click the toggle icon diplay down one by one*/
     transition: height 1s ease-in-out;
     }
 
@@ -169,9 +164,7 @@ header{
 
  
     .nav .nav-items .nav-link{
-        
         padding:2rem 1rem 2rem 1rem;
-        
         font-size: 1.1rem;
         position:relative;
         font-family:var(--Josefi);
@@ -196,11 +189,8 @@ header{
 
     /*------when mouse click navigation items, change bg color-----*/ 
     .nav .nav-items .nav-link:hover{
-        
-        background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
-        
-        
-    }
+         background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+         }
         /*----when mouse click navigation items change text color(white)-----*/
     .nav .nav-items .nav-link:hover a{
         color: var(--text-gray);
@@ -250,19 +240,13 @@ header{
 
 
 .scrolling-active .nav-link::after{
-    background-color: #313131;
-    
+    background-color: #313131;   
 }
 
 /*Apply styles after scroll end*/
 
 
 /*Apply styles after scroll end*/
-
-
-
-
-
     .logo{
         
         position:absolute;
@@ -284,6 +268,7 @@ header{
         background:url("../assets/Newsedit.png");
         background-size: cover;
         
+        display: flex; 
         /*--center title--*/
         display:flex;
         justify-content: center;
@@ -410,91 +395,120 @@ header{
 
 /* ----------------- Footer --------------------- */
 
-.footer {
+footer.footer{
+    background: var(--bg-color);
+    position: relative;
+}
+
+footer.footer .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     
-      
-    position: relative;
-    margin-top: 45px;
-    padding-top: 90px;
-    background-image: url("../assets/footer.png");
-    height: 400px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.footer .footer-row{
-    display:flex;
-}
-
-
-.footer .footer-contact,
-.footer .footer-link,
-.footer .footer-newsletter {
-    position: relative;
-    margin-bottom:40px;
-    color: #ffffff;
+    
+    
     
 }
 
-.footer .footer-contact h2,
-.footer .footer-link h2,
-.footer .footer-newsletter h2 {
-    margin-bottom: 30px;
-    font-size: 22px;
-    font-weight: 700;
-    color: #0d0f8a;
+.about-us .p1{
+    margin-bottom: -5rem;
+}
+footer.footer .container > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+
+footer.footer .container h2{
+    color: var(--white);
+    margin-left: 11rem;
+}
+.Pages{
+    margin-left: 3rem;
+}
+ .footer-nav{
+    margin-left: 8rem;
     
 }
 
-.footer .footer-link a {
-    display: block;
-    margin-bottom: 10px;
-    color: #ffffff;
-    transition: .3s;
-    
+.footer-link{
+    margin: 1rem 0;
+}
+.footer-link1{
+    margin-bottom: -4rem;
+}
+.Contact .btn{
+    padding: .5rem 2rem;
+    margin-top: 1rem;
+    margin-left: 11rem;
 }
 
-.footer .footer-link a::before {
-    position: relative;
-    content: "\f105";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    margin-right: 10px;
+footer.footer .rights{
+    justify-content: center;
+    font-family: var(--Josefin);
+    color:var(--white);
 }
 
-.footer .footer-link a:hover {
-    color: #0d0f8a;
-    letter-spacing: 1px;
+
+
+footer.footer .move-up{
+    position: absolute;
+    right: 2%;
+    top: 50%;
 }
 
-.footer .footer-contact p i {
-    width: 25px;
+footer.footer .move-up span{
+    color: var(--midnight);
 }
 
-.footer .footer-newsletter form {
-    position: relative;
-    width: 100%;
+footer.footer .move-up span:hover{
+    color: var(--white);
+    cursor: pointer;
 }
 
-.footer .footer-newsletter input {
-    margin-bottom: 15px;
-    height: 60px;
-    border: none;
-    border-radius: 0;
+/* ---------x------- Footer ----------x---------- */
+
+/*              Viewport less then or equal to 1130px            */
+
+@media only screen and (max-width: 1130px){
+    .site-content .post-content > .post-image .post-info{
+        left: 2rem !important;
+        bottom: 1.2rem !important;
+        border-radius: 0% !important;
+    }
+
+    .site-content .sidebar .popular-post .post-info{
+        display: none !important;
+    }
+
+    footer.footer .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
-.footer .footer-newsletter label {
-    margin-top: 5px;
-    color: #777777;
-    font-size: 14px;
-    letter-spacing: 1px;
-}
+/*      x       Viewport less then or equal to 1130px    x     */
 
-.footer .footer-newsletter .btn.btn-custom {
-    width: 100%;
-    padding: 15px 0;
-}
 
+/*              Viewport less then or equal to 750px            */
+
+@media only screen and (max-width: 750px){
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+    }
+
+    .nav .toggle-collapse{
+        display: initial;
+    }
+
+    main .site-content{
+        grid-template-columns: 100%;
+    }
+
+    footer.footer .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
 
 
 /* ---------x------- Footer ----------x---------- */
