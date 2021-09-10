@@ -80,7 +80,7 @@ button.btn{
     margin: 0 5vw;
 }
 p{
-    font-family: var(--Lexend);
+    
     color: var(--text-light);
 }
 
@@ -398,6 +398,7 @@ header{
 footer.footer{
     background: var(--bg-color);
     position: relative;
+    
 }
 
 footer.footer .container{
@@ -419,14 +420,35 @@ footer.footer .container > div{
 }
 
 footer.footer .container h2{
+    font-family: var(--Abel);
     color: var(--white);
     margin-left: 11rem;
 }
+.about-us p{
+    color:#b5b5b5;
+    
+}
+
+.about-us .p1{
+    margin-bottom: -5rem;
+    color:#b5b5b5;
+}
+
 .Pages{
     margin-left: 3rem;
 }
  .footer-nav{
     margin-left: 8rem;
+    
+}
+.footer-link1 a{
+    
+    color: #b5b5b5;
+    
+}
+
+.footer-link a{
+    color:#b5b5b5;
     
 }
 
@@ -441,11 +463,15 @@ footer.footer .container h2{
     margin-top: 1rem;
     margin-left: 11rem;
 }
+.Contact a:hover{
+    color: var(--white);
+}
 
 footer.footer .rights{
     justify-content: center;
-    font-family: var(--Josefin);
+    font-family: var(--Abel);
     color:var(--white);
+    font-size: 1rem;
 }
 
 

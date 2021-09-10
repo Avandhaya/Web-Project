@@ -2,46 +2,7 @@ a{
     text-decoration: none;
     color:#3f4954; 
 }
-.navmenu{
-        display:flex;     
-        margin-bottom: -3px;
-        margin-top: -8px;
-}
- 
 
-.nav{
-    background:#ffffff;
-    padding:0 2rem;
-    height: 0rem;
-    min-height: 10vh;
-    }
-
-    .navmenu{
-        justify-content: space-between;
-    }
-
-    .navitems{
-        display:flex;
-        margin:0;
-        list-style-type: none;
-    }
-
- 
-    .navlink{
-        padding:1.6rem 1rem;
-        font-size: 1.1rem;
-        position:relative;
-        font-size: 1.1rem;
-    }
-
-   
-     .navlink:hover{
-        background-color: #4895ef;
-    }
-        
-     .navlink:hover a{
-        color: #ffffff;
-    }
 
 h2{
        padding-bottom: -5px;
