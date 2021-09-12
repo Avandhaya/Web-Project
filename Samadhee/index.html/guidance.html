@@ -7,13 +7,80 @@
 
 <script>
  function popup(){
-   window.open("contactform.html","ad", "width=500,height=500");
+   window.open("../index.html/contactform.html","ad", "width=500,height=500");
  }
 </script>
 
 </head>
 <body>
 
+
+<!---Jquery Library file------>
+    <script src="../index.js/jquery3.6.0.min.js"></script>
+
+<header>
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <img src="../resources/final logo1.png" height="60px"></img>
+                </div>
+                
+                <div class="nav-menu flex-row">
+                    <div class="nav-brand">
+                        <a href="#" class="text-gray"></a>
+                    </div>
+                    <!--------------collapse------------>
+                    <div class="toggle-collapse">
+                        <div class="toggle-icons">
+                            <i class="fas fa-bars"> </i>
+                        </div>
+                    </div>
+                    <!------x--------collapse-------x----->
+                    <div>
+                        <ul class="nav-items">
+                            <li class="nav-link">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#">Know your Rights</a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#">Protecting Rights</a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#">Guidance</a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#">News</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="social tex-gray">
+                        <a href="#"></i></a>
+                        <a href="#"></i></a>
+                        <a href="#"></i></a>
+                        <a href="#"></i></a>
+                        
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+<div class="content">
+  <div class="div1">
+    
+<div class="div1">
+
+ <h1 class="headtxt">Human Rights Guidance</h1>
+
+ <div class="div2" id="id1"></div>
+ <div class="div2" id="id2"></div>
+ <div class="div2" id="id3"></div>
+ <div class="div2" id="id5"></div>
+
+</div>
+</div>
 
 
 <h2>WELCOME TO OUR GUIDANCE SERVICES</h2>
@@ -59,6 +126,7 @@
   <video align="center" width="600" height="300" controls>
   <source src="../resources/Human Rights.mp4" type="video/mp4">
   <source src="../resources/Human Rights.ogg" type="video/ogg">
+    <img src="img/video.png"/> 
 Your browser does not support the video tag.
   </video>
 
@@ -78,17 +146,70 @@ Your browser does not support the video tag.
      <div class="inner" id="third"><p id="er">All human beings are born free and equal in dignity and rights<br><br>-Eleanor Roosevelt-</p></div>
   </div>
   
-
 </div>
 
-<div class="footer">
-  <h3>Contact Our Guidance Team For More Information</h3>
-  
-  <button id="button" onclick="popup();">Contact Us</button> <br><br>
-  
-<p class="foottxt"><a href="terms.html">Terms and Conditions </a> &nbsp; &nbsp; <a href="privacypolicy.html">Privacy Policy</a></p>
-  
-</div>
+
+<!-- Footer Start -->
+<footer class="footer">
+        <div class="container">
+            <div class="about-us" >
+                <h2>About us</h2>
+                <p align="center">We aim to offer people the opportunity to reach us through our website where they can meet our guidance team for advice and assistance regarding their violated rights</p>
+                <p class="p1" align="center">Our guidance team investigate about your issues and provide you with the best procedures to protect your rights.</p>
+            </div>
+            <div class="Pages" >
+                <h2>Pages</h2>
+                <ul class="footer-nav">
+                    <li class="footer-link">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="#">Know your Rights</a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="#">Protecting Rights</a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="#">Guidance</a>
+                    </li>
+                    <li class="footer-link1">
+                        <a href="./News.html" class="apple">News</a>
+                    </li>
+                </ul>
+               
+            </div>
+            
+            <div class="Contact" >
+                <h2>Contact us</h2>
+                <button class="btn btn-blog" > <a href="" onclick="popup();">Contact Us</a>  
+                </button>  
+                
+                
+            </div>
+            
+        </div>
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                Copyright ©2021 All rights reserved | Rights to Life
+                
+            </h4>
+        </div>
+        <div class="move-up">
+            <span>
+                <i class="fas fa-arrow-circle-up fa-2x"></i></span>
+        </div>
+    </footer>
+
+<!-- Footer End -->
+
+<script>
+window.addEventListener('scroll', function () {
+        /*create the variable header*/
+        let header = document.querySelector('header');
+        let windowPosition = window.scrollY > 0;
+        header.classList.toggle('scrolling-active', windowPosition);
+    })
+</script>
 
 </body>
 </html>
