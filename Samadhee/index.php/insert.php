@@ -2,37 +2,37 @@
 <html>
 <body>
 	<center>
-		<?php
 
-		$conn = mysqli_connect("localhost", "root", "", "contact");
-		
-		if($conn === false){
-			die("ERROR: Could not connect. "
-				. mysqli_connect_error());
-		}
-		
-		$name = $_REQUEST['name'];
-		$email = $_REQUEST['email'];
-		$message = $_REQUEST['message'];
-		
-		$sql = "INSERT INTO user VALUES ('$name',
-			'$email','$message')";
-		
-		if(mysqli_query($conn, $sql)){
-			echo "<h3>data stored in the contact database successfully."
-				. " Check the localhost php my admin"
-				. " to view the updated data</h3>";
+<?php 
 
-			echo nl2br("\n$name\n $email\n "
-				. "$message");
-		} else{
-			echo "ERROR: Sorry $sql. "
-				. mysqli_error($conn);
-		}
+include_once '../index.php/dbconnect.php';
+
+
+                $name = $_POST['name'];
+		$email = $_POST['email'];
+		$message = $_POST['message'];
 		
-		mysqli_close($conn);
-		?>
-	</center>
+
+//insert values to table contactdetails
+
+$insert="INSERT INTO contactdetails VALUES('$name','$email','$message');";
+
+if(mysqli_query($con,$insert))
+{
+	echo "Details stored in database successfully!".mysqli_affected_rows($con);
+	echo nl2br("\n$name\n $email\n ". "$message");
+}
+else
+{
+	echo "Failed to store data".mysqli_error($con);
+}
+
+
+mysqli_close($con);
+
+?>
+
+</center>
 </body>
 
 </html>
