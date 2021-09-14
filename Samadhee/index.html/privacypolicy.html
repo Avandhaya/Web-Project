@@ -4,32 +4,571 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
+<script>
+ function popup(){
+   window.open("../index.html/contactform.html","ad", "width=500,height=500");
+ }
+</script>
+
 <style>
-h1{
-	color: #000080;
-	padding-top: 15px;
+
+
+html,body{
+    margin:0%;
+    box-sizing: border-box;
+    overflow-x:hidden;
 }
+
+:root{
+
+    /*Theme colors*/
+    --text-gray:#3f4954;
+    --text-light:#686666da;
+    --bg-color:#0f0f0f;
+    --white: #ffffff;
+    --midnight:#104f55;
+
+    /* Gradient color  */
+
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+    /*---------theme font-family--------*/
+    --Abel:'Abel',cursive;
+    --Anton:'Anton',cursive;
+    --Josefin:'Josefin',cursive;
+    --Lexend:'Lexend',cursive;
+    --Livvic:'Livvic', cursive;
+}
+
+/*-------------------------Global Classes-----------------------*/
+a{
+    text-decoration: none;
+    color:#3f4954;;
+}
+
+.flex-row{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+ ul{
+     list-style-type: none;
+ }
+ h1{
+    font-family: var(--Abel);
+    font-size:6.5rem;
+    
+   
+}
+
+h3{
+    font-family: var(--Abel);
+    font-size: 1.7rem;
+    
+}
+
+h2{
+    font-family: var(--Lexend);
+}
+
+span{
+    font-family: var(--Abel);
+    margin: 1rem;
+    align-content: left;
+    
+}
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding:1rem 3rem;
+    font-size:1rem;
+    font-family: var(--Abel);
+    cursor: pointer;
+    color:#4895ef;
+    
+    
+    
+}
+.container{
+    margin: 0 5vw;
+}
+
+.about-us p{
+    font-family: var(--Lexend);
+    color: var(--text-light);
+}
+
+
+
+
+
+/*------------x-------------Global Classes-------x------------*/
+
+/*--------------------------navBar----------------------*/
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: background-color .5s ease;
+    
+    z-index: 1000;
+}
+/* we can use header padding,margin*/
+.container{
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0rem 0rem;
+}
+/*x we can use header padding,margin*/
+
+.nav{
+    
+    padding:0rem 0rem 0rem 0rem;
+    height: 5.1rem;
+    margin-top: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 1s ease;
+    transition: margin .5s ease;
+    
+    
+   
+    
+    
+    /* when click the toggle icon diplay down one by one*/
+    transition: height 1s ease-in-out;
+    }
+
+    .nav .nav-menu{
+        
+        justify-content: space-between;  
+    }
+
+    .nav .nav-items .nav-link a{
+        color: black;
+    }
+/*-------------collapse-----------*/
+    .nav .toggle-collapse{
+        position:absolute;
+        top:0%;
+        width:90%;
+        cursor: pointer;
+        display:none;
+    }
+
+    .nav .toggle-collapse .toggle-icons{
+        display:flex;
+        justify-content: flex-end;
+        padding: 1.7rem 0;
+    }
+
+    .nav .toggle-collapse .toggle-icons i{
+        font-size: 1.4rem;
+        color: var(--bg-color)
+        
+    }
+
+    .collapse{
+        height: 30rem;
+    }
+    /*------x-------collapse------x-----*/
+    .nav .nav-items{
+        
+        display:flex;
+        margin:0;
+    }
+
+ 
+    .nav .nav-items .nav-link{
+        
+        padding:2rem 1rem 2rem 1rem;
+        
+        font-size: 1.1rem;
+        position:relative;
+        font-family:var(--Josefi);
+        font-size: 1.1rem;
+    }
+    .nav-link::after{
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        bottom: 3px;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform .5s ease;
+    }
+    
+    .nav-link:hover::after{
+        transform: scaleX(1);
+    }
+
+    /*------when mouse click navigation items, change bg color-----*/ 
+    .nav .nav-items .nav-link:hover{
+        
+        background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+        
+        
+    }
+        /*----when mouse click navigation items change text color(white)-----*/
+    .nav .nav-items .nav-link:hover a{
+        color: var(--text-gray);
+    }
+/*-------x----when mouse click navigation items, change bg color-------x-----*/
+
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    margin-right: 7rem;
+    color:var(--white);
+    display: block;
+    font-family:var(--Lexendl);
+    font-size:1.6rem;
+    
+}
+
+/*Apply styles after scroll*/
+/*Apply styles after scroll*/
+.scrolling-active{
+    background-color: white;
+    box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+}
+
+.scrolling-active .nav{
+    height: 4.5rem;
+    margin-top: -1rem;
+    
+}
+.scrolling-active .nav .nav-items .nav-link{
+    padding: 1.7rem 1rem;
+}
+
+.scrolling-active .nav .nav-items .nav-link a{
+    color: var(--text-gray);
+}
+.scrolling-active .nav a{
+    color: #313131;
+}
+.scrolling-active .nav img{
+    width: 20%;
+    height: auto;
+    transition: width .5s ease;
+}
+
+
+
+.scrolling-active .nav-link::after{
+    background-color: #313131;
+    
+}
+
+/*Apply styles after scroll end*/
+
+
+    .logo{
+        
+        position:absolute;
+        top: 2px;
+        margin-top: .6rem;
+        margin-left: 1rem;
+        
+    }
+    
+/*--------------------------navBar----------------------*/
+
+
+
+  /*.footer{
+       padding-top: 35px;
+       background-color: #000033;
+       color: white;
+       width: 1345px;
+       margin-left: -40px;
+       height: 220px;   
+       padding-bottom: 5px; 
+       margin-bottom: -8px;
+       margin-top: -15px;
+}
+*/
+
+/* ----------------- Footer --------------------- */
+
+footer.footer{
+    background: var(--bg-color);
+    position: relative;
+    margin-top: 2px;
+    
+}
+
+footer.footer .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+}
+
+.about-us .p1{
+    margin-bottom: -5rem;
+}
+footer.footer .container  div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+
+footer.footer .container h2{
+    font-family: 'Abel';
+    color: var(--white);
+    margin-left: 180px;
+    margin-top: -20px;
+    padding-top: 25px;
+    
+}
+.about-us p{
+    color:#b5b5b5;
+    margin-left: 25px;
+    font-family: 'Abel';
+    font-size: 20px;
+}
+
+.about-us .p1{
+    margin-bottom: -5rem;
+    color:#b5b5b5;
+    margin-left: 25px;
+}
+
+.Pages{
+    margin-left: 40px;
+}
+
+ .footer-nav{
+    margin-left: 8rem;
+
+    
+}
+.footer-link1 a{
+    
+    color: #b5b5b5;
+    margin-left: 20px;
+}
+
+.footer-link a{
+    color:#b5b5b5;
+    margin-left: 20px;
+}
+
+.footer-link{
+    margin: 1rem 0;
+    margin-left: -10px;
+}
+.footer-link1{
+    margin-bottom: -4rem;
+    margin-left: -10px;
+}
+
+.Contact h2{
+       margin-left: 20px;
+       font-family: 'Abel';
+       
+}
+
+.Contact .btn{
+    padding: .5rem 2rem;
+    margin-top: 1rem;
+    margin-left: 140px;
+}
+
+.Contact a:hover{
+    color: var(--white);
+}
+
+footer.footer .rights{
+    justify-content: center;
+    font-family: 'Abel';
+    color:var(--white);
+    font-size: 1rem;
+}
+
+.text-grey h4{
+    font-family: consolas;
+}
+
+footer.footer .move-up{
+    position: absolute;
+    right: 2%;
+    top: 50%;
+}
+
+footer.footer .move-up span{
+    color: var(--midnight);
+}
+
+footer.footer .move-up span:hover{
+    color: var(--white);
+    cursor: pointer;
+}
+/* --button---*/
+
+.btn-blog:hover{
+        
+    box-shadow: 0 8px 12px rgba(154, 159, 151, 0.2);
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);    
+}
+
+/* ---------x------- Footer ----------x---------- */
+
+/*              Viewport less then or equal to 1130px            */
+
+@media only screen and (max-width: 1130px){
+    .site-content .post-content > .post-image .post-info{
+        left: 2rem !important;
+        bottom: 1.2rem !important;
+        border-radius: 0% !important;
+    }
+
+    .site-content .sidebar .popular-post .post-info{
+        display: none !important;
+    }
+
+    footer.footer .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/*      x       Viewport less then or equal to 1130px    x     */
+
+
+/*              Viewport less then or equal to 750px            */
+
+@media only screen and (max-width: 750px){
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+    }
+
+    .nav .toggle-collapse{
+        display: initial;
+    }
+
+    main .site-content{
+        grid-template-columns: 100%;
+    }
+
+    footer.footer .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+
+/* ---------x------- Footer ----------x---------- */
+
+
+.h1txt{
+    color: #000080;
+    padding: 12px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 25px;
+}
+
 .header{
-	margin-top: -20px;
-	padding-bottom: 1.5px;
-	background: #80BFFF;
-	width: 1349px;
-   margin-left: -8px;
+    margin-top: 82px;
+    padding-bottom: 1.5px;
+    background: #80BFFF;
+    width: 1349px;
+    margin-left: 1px;
 }
-p,ul,li{
-	font-size: 16px;
-	font-family: sans-serif;
+
+p{
+    font-size: 16px;
+    font-family: sans-serif;
 }
+
+.listtxt{
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
 h2{
 	color: #0052CC;
 }
+
+.content{
+    align-content: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 15px;
+}
+
 </style>
 
 </head>
 <body>
+
+
+<!---Jquery Library file------>
+    <script src="../index.js/jquery3.6.0.min.js"></script>
+
+<header>
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <img src="../resources/final logo1.png" height="60px"></img>
+                </div>
+                
+                <div class="nav-menu flex-row">
+                    <div class="nav-brand">
+                        <a href="#" class="text-gray"></a>
+                    </div>
+                    <!--------------collapse------------>
+                    <div class="toggle-collapse">
+                        <div class="toggle-icons">
+                            <i class="fas fa-bars"> </i>
+                        </div>
+                    </div>
+                    <!------x--------collapse-------x----->
+                    <div>
+                        <ul class="nav-items">
+                            <li class="nav-link">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#">Know your Rights</a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#">Protecting Rights</a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#">Guidance</a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#">News</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="social tex-gray">
+                        <a href="#"></i></a>
+                        <a href="#"></i></a>
+                        <a href="#"></i></a>
+                        <a href="#"></i></a>
+                        
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
 	<div class="header">
-<h1 align="center">Privacy Policy</h1>
+<h1 class="h1txt">Privacy Policy</h1>
     </div>
+
+    <div class="content">
 <p>Your privacy is important to us. It is our website's policy to respect your privacy and comply with any applicable laws and regulations regarding any personal information we may collect about you in through our website.</p>
 
 <h2>Information We Collect</h2>
@@ -37,10 +576,10 @@ h2{
 
 <h2>Personal Information</h2>
 <p>We may ask you for some service-related personal information which may include one or more of the following: </p>
-<ul>
-   <li>Name</li>
-   <li>Email</li>
-   <li>Phone/mobile number</li>
+<ul class="listtxt">
+   <li class="listtxt">Name</li>
+   <li class="listtxt">Email</li>
+   <li class="listtxt">Phone/mobile number</li>
 </ul>
 
 <h2>Legitimate Reasons for Processing Your Personal Information</h2>
@@ -48,16 +587,16 @@ h2{
 
 <h2>Collection and Use of Information</h2>
 <p>We may collect personal information from you when you do any of the following on our website: </p>
-<ul>
-   <li>Use a mobile device or web browser to access our content and services</li>
-   <li>Contact us via email, social media, or on any similar technologies</li>
+<ul class="listtxt">
+   <li class="listtxt">Use a mobile device or web browser to access our content and services</li>
+   <li class="listtxt">Contact us via email, social media, or on any similar technologies</li>
 </ul>
 
 <p>We may collect, hold, use, and disclose information for the following purposes, and personal information will not be further processed in a manner that is incompatible with these purposes: </p>
-<ul>
-   <li>To enable you to get the maximum benefit of our services through our website </li>
-   <li>To contact and communicate with you</li>
-   <li>To improve our services and guidance procedures further</li>
+<ul class="listtxt">
+   <li class="listtxt">To enable you to get the maximum benefit of our services through our website </li>
+   <li class="listtxt">To contact and communicate with you</li>
+   <li class="listtxt">To improve our services and guidance procedures further</li>
 </ul>
 
 <h2>Security of Your Personal Information</h2>
@@ -74,6 +613,70 @@ h2{
 <p>If you believe that any information we hold about you is inaccurate, out of date, incomplete, irrelevant, or misleading, please contact us using the details provided in this privacy policy. We will take reasonable steps to correct any information found to be inaccurate, incomplete, misleading, or out of date. </p>
 
 <p>If you believe that we have breached a relevant data protection law and wish to make a complaint, please contact us using the details below and provide us with full details of the alleged breach. We will promptly investigate your complaint and respond to you, in writing, setting out the outcome of our investigation and the steps we will take to deal with your complaint. You also have the right to contact a regulatory body or data protection authority in relation to your complaint. </p>
+</div>
+
+
+<!-- Footer Start -->
+<footer class="footer">
+        <div class="container">
+            <div class="about-us" >
+                <h2>About us</h2>
+                <p align="center">We aim to offer people the opportunity to reach us through our website where they can meet our guidance team for advice and assistance regarding their violated rights</p>
+                <p class="p1" align="center">Our guidance team investigate about your issues and provide you with the best procedures to protect your rights.</p>
+            </div>
+            <div class="Pages" >
+                <h2>Pages</h2>
+                <ul class="footer-nav">
+                    <li class="footer-link">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="#">Know your Rights</a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="#">Protecting Rights</a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="#">Guidance</a>
+                    </li>
+                    <li class="footer-link1">
+                        <a href="./News.html" class="apple">News</a>
+                    </li>
+                </ul>
+               
+            </div>
+            
+            <div class="Contact" >
+                <h2>Contact us</h2>
+                <button class="btn btn-blog" > <a href="" onclick="popup();">Contact Us</a>  
+                </button>  
+                
+                
+            </div>
+            
+        </div>
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                Copyright ©2021 All rights reserved | Rights to Life
+                
+            </h4>
+        </div>
+        <div class="move-up">
+            <span>
+                <i class="fas fa-arrow-circle-up fa-2x"></i></span>
+        </div>
+    </footer>
+
+<!-- Footer End -->
+
+<script>
+window.addEventListener('scroll', function () {
+        /*create the variable header*/
+        let header = document.querySelector('header');
+        let windowPosition = window.scrollY > 0;
+        header.classList.toggle('scrolling-active', windowPosition);
+    })
+</script>
 
 </body>
 </html>
