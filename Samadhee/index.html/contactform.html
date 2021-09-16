@@ -4,6 +4,37 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
  
+
+<script type="text/javascript">
+   function validate()
+   {
+     var name=document.form.name.value;
+     var Email=document.form.email.value;
+     var Message=document.form.message.value;
+     var submit1=document.form.submit.onsubmit;
+     
+     if(name=="" || Email=="" || Message=="")
+       {
+        alert("Please enter all details to continue");
+        return false; 
+       }
+     
+      if(!Email.includes('.','@'))
+      {
+        alert("Invalid Email");
+        return false;
+      }
+      
+      if(submit1==onsubmit)
+      {
+        alert("Form submitted!");
+        return true;
+      }
+   }
+ </script>
+
+
+
 <style>
 .container {
   max-width: 400px;
@@ -47,13 +78,13 @@ h1{
 
 </head>
 <body>
-    <form class="container" action="insert.php" method="POST">
+    <form name="form" class="container" action="insert.php" method="POST" onsubmit="return validate()">
  <h1 align="center">Contact Form</h1>
- Name  <input type="text" name="name"  required><br></br>
- Email  <input type="text" name="email"  required><br></br>
- Message<input type="text" name="message"  required><br></br>
+ Name  <input type="text" name="name"><br></br>
+ Email  <input type="text" name="email"><br></br>
+ Message<input type="text" name="message"><br></br>
 
- <input type="submit" class="btn1" value="Send Message">
+ <input type="submit" name="submit" class="btn1" value="Send Message" onClick="validate();">
  <input type="reset" class="btn2" value="Cancel">
     </form>
 </body>
