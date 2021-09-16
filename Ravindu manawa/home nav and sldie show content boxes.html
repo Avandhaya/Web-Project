@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+ <html lang="en">
+    <head><title>About Us</title>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HOME PAGE</title>
+        
+        
+        
+        
+        
+
+        <!--custome Style-->
+        <link rel="stylesheet" href="./style.css">
+        
+     
+    
+    <body>
+           
+        <!--------------------------Navigation------------------->
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <img src="./final logo1.png" height="60px"></img>
+                </div>
+                
+                <div class="nav-menu flex-row">
+                    <div class="nav-brand">
+                        <a href="#" class="text-gray"></a>
+                    </div>
+                    <!--------------collapse------------>
+                    <div class="toggle-collapse">
+                        <div class="toggle-icons">
+                            <i class="fas fa-bars"> </i>
+                        </div>
+                    </div>
+                    <!------x--------collapse-------x----->
+                    <div>
+                        <ul class="nav-items">
+                            <li class="nav-link">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#">Know your Rights</a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#">Protecting Rights</a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#">Guidance</a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="./News.html" class="apple">News</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="social tex-gray">
+                        <a href="#"></i></a>
+                        <a href="#"></i></a>
+                        <a href="#"></i></a>
+                        <a href="#"></i></a>
+                        
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-----------x---------------Navigation------x------------->
+
+
+        
+        
+
+        <!--IMage slideshow starts hear-->
+
+     <style>
+
+
+    body{
+             background:#ffffff;
+
+
+    }
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+ 
+  
+  position: relative;
+  
+  margin-top:5rem;
+ 
+ background-color: #000;
+background-size: 100% 100%;
+box-shadow: 1px 2px 10px white;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+
+
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="image4.jpg" style="width:100%">
+  <div class="centered">ABOUT US</div>
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="./tty.jpg" style="width:100%">
+  <div class="centered">ABOUT US</div>
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="image6.jpg" style="width:100%">
+  <div class="centered">ABOUT US</div>
+  
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+  <!--content boxes starts hear-->
+  <style>
+  	@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700')
+ body
+ {
+
+     margin:0;
+     padding: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     background: #222;
+     font-family:'Ubuntu',sans-serif;
+
+ }
+
+  .container
+
+  {
+  	width: 1200px;
+  	height: auto;
+  	margin: 0 auto;
+  	display: grid;
+  	grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  	grid-gap: 10px;
+  	padding: 10px;
+  	box-sizing: border-box;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: #fff;
+    text-shadow:4px 4px #0000ff; }
+
+
+  .container .box
+  {
+  	position:relative;
+  	background:#fff;
+  	padding: 20px 40px 40px;
+  	text-align:center;
+  	overflow: hidden;
+  	border-radius: 20px; 
+  }
+
+  .container .box:nth-child(1)
+  {
+  	background: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  }
+
+   .container .box:nth-child(2)
+   {
+
+   	background: linear-gradient(147deg, #990000 0%, #ff0000 74%);
+
+   }
+
+
+   .container .box:nth-child(3)
+   {
+
+   	background: linear-gradient(315deg, #00b712 0%, #5aff15 74%);
+
+   }
+
+
+   .container .box:nth-child(4)
+   {
+
+   	background: linear-gradient(315deg, #fff000 0%, #ed008c 74%);
+
+
+   }
+   
+
+   .container .box h2
+   {
+   	 position: relative;
+   	 margin:0;
+   	 padding: 0;
+   	 font-size: 100px;
+   	 color:#fff;
+   	 z-index:1;
+   	 opacity: 0.8;
+
+   }
+
+   .container .box h3
+   {
+   	 
+   	 margin:0;
+   	 padding: 0;
+   	 font-size: 24px;
+   	 color:#fff;
+   	 text-transform: uppercase;
+   	 
+
+   }
+
+   .container .box p
+   {
+   	 
+   	 margin:0;
+   	 padding: 0;
+   	 font-size: 18px;
+   	 color:#fff;
+   	 
+   	
+
+   }
+   @media only screen and (max-width: 1130px){
+    .container .box{
+        width: 10rem;
+        height: 30rem;
+    }
+    .container .box p{
+        font-size: 11px;
+    }
+   }
+   *              Viewport less then or equal to 1130px            */
+
+@media only screen and (max-width: 1130px){
+    .Pages{
+        margin-left: -2rem;
+    }
+    .Contact{
+        margin-left:-4rem ;
+    }
+    .about-us {
+        margin-left: 2rem;
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 6rem;
+    }
+    h3{
+        font-family: var(--Abel);
+        font-size: 1.2rem;
+        
+    }
+
+}
+
+/*              Viewport less then or equal to 860px            */
+@media only screen and (max-width: 860px){
+    .Pages{
+        margin-left: -4rem;
+    }
+    .Contact{
+        margin-left:-6rem ;
+    }
+    .about-us {
+        margin-left: 4rem;
+    }
+    .about-us .p1{
+        padding-bottom: 2rem;
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 3rem;
+    }
+    .logo img{
+        
+            width: 23%;
+            height: auto;
+          
+    }
+}
+
+
+/*---------------Viewport less than or equal to 750px----------*/
+
+@media only screen and (max-width:750px){
+    /*when equal to 750px menu go to left side colum;(collapse)*/
+    .nav .nav-menu, .nav .nav-items{
+        
+        margin-top: -2rem;
+        flex-direction:column;
+    }
+    .nav .nav-menu{
+        margin-top: 5.3rem;
+        background-color: rgb(230, 230, 230);
+    }
+
+    .nav .toggle-collapse{
+        display:initial;
+    }
+    footer.footer .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .Pages{
+        margin-left: 9rem;
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 17rem;
+    }
+    .Contact{
+        margin-left:7rem ;
+    }
+    .about-us {
+        margin-left: 2rem;
+        
+    }
+    .about-us p{
+        padding: 0rem 5rem;
+    }
+    main .site-title{
+        background-size: 50rem;
+        background-repeat: no-repeat;
+    }
+    main .site-title h1{
+        font-size: 4rem;
+        margin-top: -2rem;
+    }
+
+    main .blog{
+        margin-top: -3rem;   
+        margin-bottom: -6rem;
+        }  
+}
+
+
+/*--------x-------Viewport less than or equal to 750px----x-----*/
+
+
+/*-------------Viewport less than or equal to 660px---------*/
+@media only screen and (max-width:660px){
+    .Pages{
+        margin-left: 3rem;
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 13rem;
+    }
+    .about-us {
+        margin-left: 1rem;
+        
+    }
+    .Contact{
+        margin-left:2rem ;
+    }
+    .about-us p{
+        padding: 0rem 2rem;
+    }
+
+}
+/*-------------Viewport less than or equal to 500px---------*/
+@media only screen and (max-width:500px){
+    .Pages{
+        margin-left: 0rem;
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 10rem;
+    }
+    .about-us {
+        margin-left: 0rem;
+        
+    }
+    .Contact{
+        margin-left:0rem ;
+    }
+    .about-us p{
+        padding: 0rem 1rem;
+    }
+    .logo img{
+        
+        width: 30%;
+        height: auto;
+      
+}
+
+}
+
+/*-------------Viewport less than or equal to 430px---------*/
+@media only screen and (max-width:430px){
+    .Pages{
+        margin-left: -1rem;
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 10rem;
+    }
+    .about-us {
+        margin-left: 0rem;
+        
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 9rem;
+    }
+    .Contact{
+        margin-left:-2rem ;
+    }
+    .about-us p{
+        padding: 0rem 0rem;
+    }
+
+}
+/*-------------Viewport less than or equal to 350px---------*/
+@media only screen and (max-width:350px){
+    .Pages{
+        margin-left: -4rem;
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 10rem;
+    }
+    .about-us {
+        margin-left: 0rem;
+        
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 7rem;
+    }
+    .Contact{
+        margin-left:-5rem ;
+    }
+    .about-us p{
+        padding: 0rem 0rem;
+    }
+    main .site-title h1{
+        font-size: 3rem;
+        margin-top: -1rem;
+    }
+
+}
+/*-------------Viewport less than or equal to 320px---------*/
+@media only screen and (max-width:320px){
+    .Pages{
+        margin-left: -5rem;
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 5rem;
+    }
+    .about-us {
+        margin-left: 0rem;
+        
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 5rem;
+    }
+    .Contact{
+        margin-left:-7rem ;
+    }
+    
+    footer.footer .rights{
+         font-size: 10px; 
+    }
+
+}
+/*-------------Viewport less than or equal to 225px---------*/
+@media only screen and (max-width:225px){
+    .Pages{
+        margin-left: -7rem;
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 4rem;
+    }
+    .about-us {
+        margin-left: 0rem;
+        
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 4rem;
+    }
+    .Contact{
+        margin-left:-8rem ;
+    }
+    
+    footer.footer .rights{
+         font-size: 10px; 
+    }
+
+}
+   
+
+  </style>
+   <div class="container">
+  	 	<div class= "box">
+  	 		<h2>1</h2>
+  	 		<h3> ABOUT US</h3>
+  	 		<p>We aim to offer people the oppurtunity to reach us through our website where they can meet our guidance team for advice and assistance regarding thier violated rights.
+
+  	 		   Our guidance team investigate about your issues and provide you with the best procedures to protect your rights.</p>
+  	 	</div>
+  	 	<div class ="box">
+  	        
+  	        <h2>2</h2>
+  	 	    <h3> OUR GOALS</h3>
+  	 		<p>Make people awareabout the basic human rightsand give them a clear understanding about the immense importance tof human rights.
+
+  	 		   Guide people to take necessary actions before their rights are being violated.
+
+  	           Help victims protect their rights by guiding the towards the correct direction.
+
+  	           Advice victims of human rights about the procedures to seek redressal for violated rights.</p>
+  	 	</div>
+  	 	<div class ="box">
+  	 		<h2>3</h2>
+  	 		<h3>MISSION</h3>
+  	 		<p>Our mission is to spred awareness amoung people to make them understand the true value of human rights.</p>
+  	 	</div>
+  	 	<div class ="box">
+  	 		<h2>4</h2>
+  	 		<h3>VISION</h3>
+  	 		<p>serve the world to reduce all formats of violence and make it a better place for all humans.</p>
+  	 	</div>
+  	
+  	 </div>
+
+  	 <!-----------x----------------Main Site Section-------x------>
+    <!-- --------------------------- Footer ---------------------------------------- -->
+    <style>
+    	:root{
+
+    /*Theme colors*/
+    --text-gray:#3f4954;
+    --text-light:#686666da;
+    --bg-color:#0f0f0f;
+    --white: #ffffff;
+    --midnight:#104f55;
+
+
+}
+/*-------------------------Global Classes-----------------------*/
+
+
+
+a{
+    text-decoration: none;
+    color:var(--text-gray);
+    
+    
+}
+.flex-row{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+ ul{
+     list-style-type: none;
+ }
+ h1{
+    font-family: var(--Abel);
+    font-size:6.5rem;
+    
+   
+}
+
+h3{
+    font-family: var(--Abel);
+    font-size: 1.7rem;
+    
+}
+
+h2{
+    font-family: var(--Lexend);
+}
+
+span{
+    font-family: var(--Abel);
+    margin: 1rem;
+    align-content: left;
+    
+}
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding:1rem 3rem;
+    font-size:1rem;
+    font-family: var(--Abel);
+    cursor: pointer;
+    color:#4895ef;
+    
+    
+    
+}
+
+p{
+    
+    color: var(--text-light);
+}
+
+
+
+
+
+/*------------x-------------Global Classes-------x------------*/
+
+
+/* ----------------- Footer --------------------- */
+
+footer.footer{
+    background: var(--bg-color);
+    position: relative;
+    
+}
+
+footer.footer .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    
+    
+    
+}
+
+.about-us .p1{
+    margin-bottom: -5rem;
+}
+footer.footer .container > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+
+footer.footer .container h2{
+    font-family: var(--Abel);
+    color: var(--white);
+    margin-left: 11rem;
+}
+.about-us p{
+    color:#b5b5b5;
+    
+}
+
+.about-us .p1{
+    margin-bottom: -5rem;
+    color:#b5b5b5;
+}
+
+.Pages{
+    margin-left: 3rem;
+}
+ .footer-nav{
+    margin-left: 8rem;
+    
+}
+.footer-link1 a{
+    
+    color: #b5b5b5;
+    
+}
+
+.footer-link a{
+    color:#b5b5b5;
+    
+}
+
+.footer-link{
+    margin: 1rem 0;
+}
+.footer-link1{
+    margin-bottom: -4rem;
+}
+.Contact .btn{
+    padding: .5rem 2rem;
+    margin-top: 1rem;
+    margin-left: 11rem;
+}
+.Contact a:hover{
+    color: var(--white);
+}
+
+footer.footer .rights{
+    justify-content: center;
+    font-family: var(--Abel);
+    color:var(--white);
+    font-size: 1rem;
+}
+
+
+
+footer.footer .move-up{
+    position: absolute;
+    right: 2%;
+    top: 50%;
+}
+
+footer.footer .move-up span{
+    color: var(--midnight);
+}
+
+footer.footer .move-up span:hover{
+    color: var(--white);
+    cursor: pointer;
+}
+/* --button---*/
+
+.btn-blog:hover{
+        
+    box-shadow: 0 8px 12px rgba(154, 159, 151, 0.2);
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);    
+}
+
+/* ---------x------- Footer ----------x---------- */
+
+/*              Viewport less then or equal to 1130px            */
+
+@media only screen and (max-width: 1130px){
+    .site-content .post-content > .post-image .post-info{
+        left: 2rem !important;
+        bottom: 1.2rem !important;
+        border-radius: 0% !important;
+    }
+
+    .site-content .sidebar .popular-post .post-info{
+        display: none !important;
+    }
+
+    footer.footer .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/*      x       Viewport less then or equal to 1130px    x     */
+
+
+/*              Viewport less then or equal to 750px            */
+
+@media only screen and (max-width: 750px){
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+    }
+
+    .nav .toggle-collapse{
+        display: initial;
+    }
+
+    main .site-content{
+        grid-template-columns: 100%;
+    }
+
+    footer.footer .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+</style>
+
+
+<!---------x------- Footer ----------x---------->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us" >
+                <h2>About us</h2>
+                <p align="center">We aim to offer people the opportunity to reach us through our website where they can meet our guidance team for advice and assistance regarding their violated rights</p>
+                <p class="p1" align="center">Our guidance team investigate about your issues and provide you with the best procedures to protect your rights.</p>
+            </div>
+            <div class="Pages" >
+                <h2>Pages</h2>
+                <ul class="footer-nav">
+                    <li class="footer-link">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="#">Know your Rights</a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="#">Protecting Rights</a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="#">Guidance</a>
+                    </li>
+                    <li class="footer-link1">
+                        <a href="./News.html" class="apple">News</a>
+                    </li>
+                </ul>
+               
+                
+            </div>
+            <div class="Contact" >
+                <h2>Contact us</h2>
+                <button class="btn btn-blog" > <a href="./article1.html">
+                    Contact us</a>
+                </button>  
+                
+                
+            </div>
+            
+        </div>
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                Copyright ©2021 All rights reserved | Rights to Life
+                
+            </h4>
+        </div>
+        <div class="move-up">
+            <span>
+                <i class="fas fa-arrow-circle-up fa-2x"></i></span>
+        </div>
+    </footer>
+
+    </body>
+</html> 
+
+
+
+    
