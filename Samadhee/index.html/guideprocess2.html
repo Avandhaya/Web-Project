@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="../index.css/Nav.css">
+	
+<style>
+/* ----------------- Footer --------------------- */
+footer{
+    margin-left: -1rem;
+    margin-bottom: -2rem;
+}
+footer.footer{
+    background: var(--bg-color);
+    position: relative;
+    margin-top: 35rem;
+    
+}
+.Pages ul{
+    list-style-type:none;
+}
+
+
+footer.footer .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+}
+
+.about-us .p1{
+    margin-bottom: -5rem;
+}
+footer.footer .container  div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+.footer-nav a{
+    text-decoration: none;
+}
+
+footer.footer .container h2{
+    
+    color: var(--white);
+    margin-left: 160px;
+    margin-top: -20px;
+    padding-top: 25px;
+    
+}
+.about-us p{
+    color:#b5b5b5;
+    margin-left: 25px;
+}
+
+.about-us .p1{
+    margin-bottom: -5rem;
+    color:#b5b5b5;
+    margin-left: 25px;
+}
+
+.Pages{
+    margin-left: 50px;
+    
+    
+}
+ .footer-nav{
+    margin-left: 8rem;
+
+    
+}
+.footer-link1 a{
+    
+    color: #b5b5b5;
+    
+}
+
+.footer-link a{
+    color:#b5b5b5;
+    
+}
+
+.footer-link{
+    margin: 1rem 0;
+    margin-left: -10px;
+}
+.footer-link1{
+    margin-bottom: -4rem;
+    margin-left: -10px;
+}
+
+.Contact h2{
+       margin-left: 30px;
+       
+}
+
+.Contact .btn{
+    padding: .5rem 2rem;
+    margin-top: 1rem;
+    margin-left: 150px;
+}
+
+.Contact a:hover{
+    color: var(--white);
+}
+.Contact a{
+    text-decoration: none;
+    color: black;
+}
+
+footer.footer .rights{
+    justify-content: center;
+    font-family: var(--Abel);
+    margin-top: 1rem;
+    color:var(--white);
+    font-size: 1rem;
+}
+
+
+
+footer.footer .move-up{
+    position: absolute;
+    right: 2%;
+    top: 50%;
+}
+
+footer.footer .move-up span{
+    color: var(--midnight);
+}
+
+footer.footer .move-up span:hover{
+    color: var(--white);
+    cursor: pointer;
+}
+/* --button---*/
+
+.btn-blog:hover{
+        
+    box-shadow: 0 8px 12px rgba(154, 159, 151, 0.2);
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);    
+}
+
+/* ---------x------- Footer ----------x---------- */
+
+h1{
+	color: #000080;
+	padding-top: 15px;
+	text-align: center;
+}
+  
+.text1{
+	color: #000080;
+	padding-top: 55px;
+	padding-bottom: 60px;
+	text-align: center;
+	font-size: 40px;
+	margin-top: 1px;
+	
+    margin-left: -8px;
+	
+}
+
+h2{
+	font-size: 28px;
+	color: #000080;
+    text-align: center;
+}
+ .guidebody p{
+   font-size: 22px;
+}
+
+.header{
+	margin-top: 6rem;
+	padding-bottom: 1.5px;
+	background: #80BFFF;
+	 margin-left: -8px;
+     margin-right: -8px;
+}
+
+.guidehead{
+	        background-image: url("../resources/stop.jpg");
+	        background-repeat: no-repeat;
+	        background-position: center;
+	        background-size: cover; 
+            padding: 20px;
+            
+            margin-left: -8px;
+            height: 350px;
+            margin-top: -20px;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            
+}
+.guidebody{
+            background-color: #b5ceff;
+            padding: 20px;
+            margin-top: 25rem;
+            margin-left: -8px;
+            
+}
+ 
+
+footer.footer .container h2{
+    margin-left: auto;
+}
+@media only screen and (max-width: 1130px){
+    .text1{
+        font-size: 25px;
+    }
+    .Pages{
+        margin-left: -1rem;
+    }
+    .footer-nav {
+    margin-left: 6rem;
+}
+    .Contact{
+        margin-left:-4rem ;
+    }
+    .Contact .btn {
+    
+    margin-left: 130px;}
+}
+/*              Viewport less then or equal to 860px            */
+@media only screen and (max-width: 860px){
+    .text1{
+        font-size: 20px;
+    }
+    .guidebody h2, h1{
+        font-size: 24px;
+    }
+    .guidebody p{
+        font-size: 19px;
+    }
+}
+/*              Viewport less then or equal to 750px            */
+
+@media only screen and (max-width: 750px){
+    .nav .nav-menu, .nav .nav-items{
+        margin-top: 1rem;
+        flex-direction: column;
+    }
+
+    .nav .toggle-collapse{
+        display: initial;
+    }
+    .logo img{
+        
+        width: 45%;
+        height: auto;
+      
+    }
+    footer.footer .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-nav {
+    margin-left: 14rem;
+}
+    .Contact .btn {
+    
+    margin-left: 250px;
+    }
+    .text1{
+        font-size: 18px;
+    }
+}
+/*-------------Viewport less than or equal to 660px---------*/
+@media only screen and (max-width:526px){
+    .text1{
+        font-size: 15px;
+    }
+    .guidebody h2, h1{
+        font-size: 20px;
+    }
+    .guidebody p{
+        font-size: 15px;
+    }
+    .footer-nav {
+    margin-left: 13rem;
+}
+    
+}
+/*-------------Viewport less than or equal to 426px---------*/
+@media only screen and (max-width:426px){
+    .text1{
+        font-size: 15px;
+    }
+    .guidebody h2, h1{
+        font-size: 20px;
+    }
+    .guidebody p{
+        font-size: 15px;
+    }
+    .footer-nav {
+    margin-left: 10rem;
+}
+.Contact .btn {
+    
+    margin-left: 180px;
+    }
+    footer.footer .rights{
+        font-size: 10px;
+    }
+    .guidehead{
+        height: 200px;
+        margin-bottom: 0px;
+        margin-left: .5rem;
+    }
+    .guidebody{
+        margin-top: 16rem;
+    }
+    
+}
+/*-------------Viewport less than or equal to 376px---------*/
+@media only screen and (max-width:476px){
+    .footer-nav {
+    margin-left: 8rem;
+}
+.Contact .btn {
+    
+    margin-left: 150px;
+    }
+    .guidebody h2, h1{
+        font-size: 17px;
+    }
+}
+/*-------------Viewport less than or equal to 320px---------*/
+@media only screen and (max-width:320px){
+    .footer-nav {
+    margin-left: 8rem;
+}
+.Contact .btn {
+    
+    margin-left: 150px;
+    }
+    .guidebody h2, h1{
+        font-size: 15px;
+    }
+    .guidebody p{
+        font-size: 13px;
+        
+    }
+    .guidebody {
+    margin-top: 12rem;
+}
+    
+    .guidehead{
+        height: 150px;
+        margin-bottom: 0px;
+        margin-left: .5rem;
+    }
+}
+    .footer-nav {
+    margin-left: 6rem;
+}
+.Contact{
+    margin-left: 1rem;
+}
+.Contact .btn {
+    
+    margin-left: 80px;
+    }
+
+
+</style>
+
+</head>
+<body>
+	<!--navigation bar---->
+	<header>
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <img src="../resources/final logo1.png" height="60px"></img>
+                </div>
+                
+                <div class="nav-menu flex-row">
+                    <div class="nav-brand">
+                        <a href="#" class="text-gray"></a>
+                    </div>
+                    <!--------------collapse------------>
+                    <div class="toggle-collapse">
+                        <div class="toggle-icons">
+                            <i class="fas fa-bars"> </i>
+                        </div>
+                    </div>
+                    <!------x--------collapse-------x----->
+                    <div class="link">
+                        <ul class="nav-items">
+                            <li class="nav-link">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#">Know your Rights</a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#">Protecting Rights</a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#">Guidance</a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#">News</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="social tex-gray">
+                        <a href="#"></i></a>
+                        <a href="#"></i></a>
+                        <a href="#"></i></a>
+                        <a href="#"></i></a>
+                        
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+	<div class="header">
+<h1>Our Guidance Services</h1>
+    </div>
+
+<h1 class="text1">Are your rights being subjected to violation or in the verge of being violated?<br>
+Let us guide you with the best solutions and guidelines to protect your rights.<br>
+Our guidance team is here to help you.</h1>
+
+<div class="guidehead">
+
+<div class="guidebody">
+<h2>Steps to reach our guidance and advice services and their benefits:</h2><br>
+  <ul>
+  	<li><p>Send us a message regarding your issue through our <a href="adviceform.html">support and advice</a> form. Our guidance team will look into your issue and provide you with the necessary guidance.</p></li>
+  	<li><p>You will be provided with a proper understanding on the vital importance of Human Rights.</p></li>
+  	<li><p>You will be directed to the relevant authorities to seek redressal for violated rights.</p></li>
+  	<li><p>The details you provide us are protected by responsible data practices. Refer our <a href="privacypolicy.html">privacy policy</a> for more details regarding privacy issues.</p></li>
+  </ul>
+
+<h1>The only thing you need to do is to SPEAK UP!<h1>
+</div>
+</div>
+<!-- Footer Start -->
+<footer class="footer">
+	<div class="container">
+		<div class="about-us" >
+			<h2>About us</h2>
+			<p align="center">We aim to offer people the opportunity to reach us through our website where they can meet our guidance team for advice and assistance regarding their violated rights</p>
+			<p class="p1" align="center">Our guidance team investigate about your issues and provide you with the best procedures to protect your rights.</p>
+		</div>
+		<div class="Pages" >
+			<h2>Pages</h2>
+			<ul class="footer-nav">
+				<li class="footer-link">
+					<a href="#">Home</a>
+				</li>
+				<li class="footer-link">
+					<a href="#">Know your Rights</a>
+				</li>
+				<li class="footer-link">
+					<a href="#">Protecting Rights</a>
+				</li>
+				<li class="footer-link">
+					<a href="#">Guidance</a>
+				</li>
+				<li class="footer-link1">
+					<a href="./News.html" class="apple">News</a>
+				</li>
+			</ul>
+		   
+			
+		</div>
+		<div class="Contact" >
+			<h2>Contact us</h2>
+			<button class="btn btn-blog" > <a href="" onclick="popup();">Contact Us</a>  
+			</button>  
+			
+			
+		</div>
+		
+	</div>
+	<div class="rights flex-row">
+		<h4 class="text-gray">
+			Copyright ©2021 All rights reserved | Rights to Life
+			
+		</h4>
+	</div>
+	<div class="move-up">
+		<span>
+			<i class="fas fa-arrow-circle-up fa-2x"></i></span>
+	</div>
+</footer>
+
+<!-- Footer End -->
+<script>
+    window.addEventListener('scroll', function () {
+        /*create the variable header*/
+        let header = document.querySelector('header');
+        let windowPosition = window.scrollY > 0;
+        header.classList.toggle('scrolling-active', windowPosition);
+    })
+</script>
+
+</body>
+</html>
