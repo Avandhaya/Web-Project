@@ -1,0 +1,72 @@
+
+.first
+{
+padding-top:10px;
+margin-top:0px;
+
+height:500px;
+background-image:url("./resources/human1edit.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+}
+h1
+{
+color:#ffffff;
+padding-top:130px;
+padding-left:40px;
+font-size:80px;
+text-align:center;
+}
+.second
+{
+padding-top:10px;
+
+height:300px;
+background-color:#bde2f2;
+}
+.second img
+{
+width:50rem;
+height:298px;
+float:right;
+opacity:0.3;
+}
+#f{
+padding-top:50px;
+padding-left:40px;
+font-size:30px;
+color:#3b4bf7;
+}
+.third
+{
+padding-top:10px;
+margin-left: 5rem;
+width:90rem;
+height:300px;
+}
+.second h2
+{
+padding-left:40px;
+}
+p
+{
+padding-left:60px;
+font-size:20px;
+padding-right:50px;
+}
+video
+{
+    margin-left: 8rem;
+max-width: 100%;
+height: auto;
+padding-left:250px;
+}
+
+
+
+
+
+
+
+ 
+
