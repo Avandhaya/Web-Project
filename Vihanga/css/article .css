@@ -453,3 +453,305 @@ footer.footer .move-up span:hover{
 
 
 /*--------x-------Viewport less than or equal to 750px----x-----*/
+
+/*              Viewport less then or equal to 1130px            */
+
+@media only screen and (max-width: 1130px){
+    .Pages{
+        margin-left: -2rem;
+    }
+    .Contact{
+        margin-left:-4rem ;
+    }
+    .about-us {
+        margin-left: 2rem;
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 6rem;
+    }
+    h3{
+        font-family: var(--Abel);
+        font-size: 1.2rem;
+        
+    }
+    .content p{
+        font-size: 13px;
+    }
+    .content{
+        margin:5rem 3rem;
+        align-content: center;
+        font-size: 1.3rem;
+        text-align: justify;
+    }
+    .title h2{
+        font-size: 26px;
+    }
+}
+
+/*              Viewport less then or equal to 860px            */
+@media only screen and (max-width: 860px){
+    .Pages{
+        margin-left: -4rem;
+    }
+    .Contact{
+        margin-left:-6rem ;
+    }
+    .about-us {
+        margin-left: 4rem;
+    }
+    .about-us .p1{
+        padding-bottom: 2rem;
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 3rem;
+    }
+    .logo img{
+        
+            width: 23%;
+            height: auto;
+          
+    }
+}
+
+@media only screen and (max-width: 769px){
+    footer.footer .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .Pages{
+        margin-left: 9rem;
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 17rem;
+    }
+    .Contact{
+        margin-left:7rem ;
+    }
+    .about-us {
+        margin-left: 2rem;
+        
+    }
+    .about-us p{
+        padding: 0rem 5rem;
+    }
+    main .site-title{
+        background-size: 50rem;
+        background-repeat: no-repeat;
+    }
+    main .site-title h1{
+        font-size: 4rem;
+        margin-top: -2rem;
+    }
+
+    main .blog{
+        margin-top: -3rem;   
+        margin-bottom: -6rem;
+        }  
+}
+}
+
+/*---------------Viewport less than or equal to 750px----------*/
+
+@media only screen and (max-width:750px){
+    /*when equal to 750px menu go to left side colum;(collapse)*/
+    .nav .nav-menu, .nav .nav-items{
+        
+        margin-top: -2rem;
+        flex-direction:column;
+    }
+    .nav .nav-menu{
+        margin-top: 5.3rem;
+        background-color: rgb(230, 230, 230);
+    }
+
+    .nav .toggle-collapse{
+        display:initial;
+    }
+    footer.footer .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .Pages{
+        margin-left: 9rem;
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 17rem;
+    }
+    .Contact{
+        margin-left:7rem ;
+    }
+    .about-us {
+        margin-left: 2rem;
+        
+    }
+    .about-us p{
+        padding: 0rem 5rem;
+    }
+    main .site-title{
+        background-size: 50rem;
+        background-repeat: no-repeat;
+    }
+    main .site-title h1{
+        font-size: 4rem;
+        margin-top: -2rem;
+    }
+
+    main .blog{
+        margin-top: -3rem;   
+        margin-bottom: -6rem;
+        }  
+}
+
+
+/*--------x-------Viewport less than or equal to 750px----x-----*/
+
+
+/*-------------Viewport less than or equal to 660px---------*/
+@media only screen and (max-width:660px){
+    .Pages{
+        margin-left: 3rem;
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 13rem;
+    }
+    .about-us {
+        margin-left: 1rem;
+        
+    }
+    .Contact{
+        margin-left:2rem ;
+    }
+    .about-us p{
+        padding: 0rem 2rem;
+    }
+
+}
+/*-------------Viewport less than or equal to 500px---------*/
+@media only screen and (max-width:500px){
+    .Pages{
+        margin-left: 0rem;
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 10rem;
+    }
+    .about-us {
+        margin-left: 0rem;
+        
+    }
+    .Contact{
+        margin-left:0rem ;
+    }
+    .about-us p{
+        padding: 0rem 1rem;
+    }
+    .logo img{
+        
+        width: 30%;
+        height: auto;
+      
+}
+
+}
+
+/*-------------Viewport less than or equal to 430px---------*/
+@media only screen and (max-width:430px){
+    .Pages{
+        margin-left: -1rem;
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 10rem;
+    }
+    .about-us {
+        margin-left: 0rem;
+        
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 9rem;
+    }
+    .Contact{
+        margin-left:-2rem ;
+    }
+    .about-us p{
+        padding: 0rem 0rem;
+    }
+
+}
+/*-------------Viewport less than or equal to 350px---------*/
+@media only screen and (max-width:350px){
+    .Pages{
+        margin-left: -4rem;
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 10rem;
+    }
+    .about-us {
+        margin-left: 0rem;
+        
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 7rem;
+    }
+    .Contact{
+        margin-left:-5rem ;
+    }
+    .about-us p{
+        padding: 0rem 0rem;
+    }
+    main .site-title h1{
+        font-size: 3rem;
+        margin-top: -1rem;
+    }
+    .title h2{
+        font-size: 20px;
+    }
+
+}
+/*-------------Viewport less than or equal to 320px---------*/
+@media only screen and (max-width:320px){
+    .Pages{
+        margin-left: -5rem;
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 5rem;
+    }
+    .about-us {
+        margin-left: 0rem;
+        
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 5rem;
+    }
+    .Contact{
+        margin-left:-7rem ;
+    }
+    
+    footer.footer .rights{
+         font-size: 10px; 
+    }
+    .title h2{
+        font-size: 15px;
+    }
+
+}
+/*-------------Viewport less than or equal to 225px---------*/
+@media only screen and (max-width:225px){
+    .Pages{
+        margin-left: -7rem;
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 4rem;
+    }
+    .about-us {
+        margin-left: 0rem;
+        
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 4rem;
+    }
+    .Contact{
+        margin-left:-8rem ;
+    }
+    
+    footer.footer .rights{
+         font-size: 10px; 
+    }
+
+}

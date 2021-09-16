@@ -44,8 +44,6 @@ a{
  h1{
     font-family: var(--Abel);
     font-size:6.5rem;
-    
-   
 }
 
 h3{
@@ -72,7 +70,7 @@ button.btn{
     font-family: var(--Abel);
     cursor: pointer;
     color:#4895ef;
-    
+        
     
     
 }
@@ -81,7 +79,7 @@ button.btn{
 }
 p{
     
-    color: var(--text-light);
+color: var(--text-light);
 }
 
 
@@ -107,6 +105,7 @@ header{
     max-width: 120rem;
     margin: 0 auto;
     padding: 0rem 0rem;
+    margin-top: auto;
 }
 /*x we can use header padding,margin*/
 
@@ -267,7 +266,6 @@ header{
     main .site-title{
         background:url("../assets/Newsedit.png");
         background-size: cover;
-        
         display: flex; 
         /*--center title--*/
         display:flex;
@@ -293,20 +291,19 @@ header{
     /*-----------------Blog Carousel------------------*/
 
     main .blog{
-       
-        height: 100vh;
-        width: 100%;
-        background-size: 65%;
-        margin-left: 1.6rem;
+            
+    margin-bottom: -2rem;
     }
     main .blog .blog-post{
-        padding-top: 6rem;
+        padding-top: 3rem;
+       
     }
     main .blog2 .blog-post{
         
         position:relative;
-        top:-80px;
-        margin-left: 1.6rem;
+        
+       
+        
     }
 
     main .blog-post .blog-content{
@@ -314,7 +311,7 @@ header{
         flex-direction: column;
         text-align: center;
         width: 80%;
-        margin:3rem 2rem;
+        margin:4rem 2rem;
         background-color:#f8f9fa;
         
         border-radius: 8px;
@@ -359,13 +356,14 @@ header{
     /* --button---*/
 
     .btn-blog:hover{
-        
         box-shadow: 0 8px 12px rgba(154, 159, 151, 0.2);
-        background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);    
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+       
     }
     .blog-title :hover a{
         color: white;
     }
+    
 
     .nav1 {
         
@@ -404,10 +402,6 @@ footer.footer{
 footer.footer .container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    
-    
-    
-    
 }
 
 .about-us .p1{
@@ -426,7 +420,6 @@ footer.footer .container h2{
 }
 .about-us p{
     color:#b5b5b5;
-    
 }
 
 .about-us .p1{
@@ -476,68 +469,57 @@ footer.footer .rights{
 
 
 
-footer.footer .move-up{
-    position: absolute;
-    right: 2%;
-    top: 50%;
-}
 
-footer.footer .move-up span{
-    color: var(--midnight);
-}
-
-footer.footer .move-up span:hover{
-    color: var(--white);
-    cursor: pointer;
-}
 
 /* ---------x------- Footer ----------x---------- */
 
 /*              Viewport less then or equal to 1130px            */
 
 @media only screen and (max-width: 1130px){
-    .site-content .post-content > .post-image .post-info{
-        left: 2rem !important;
-        bottom: 1.2rem !important;
-        border-radius: 0% !important;
+    .Pages{
+        margin-left: -2rem;
     }
-
-    .site-content .sidebar .popular-post .post-info{
-        display: none !important;
+    .Contact{
+        margin-left:-4rem ;
     }
-
-    footer.footer .container{
-        grid-template-columns: repeat(2, 1fr);
+    .about-us {
+        margin-left: 2rem;
     }
-
-}
-
-/*      x       Viewport less then or equal to 1130px    x     */
-
-
-/*              Viewport less then or equal to 750px            */
-
-@media only screen and (max-width: 750px){
-    .nav .nav-menu, .nav .nav-items{
-        flex-direction: column;
+    footer.footer .container .about-us h2{
+        margin-left: 6rem;
     }
-
-    .nav .toggle-collapse{
-        display: initial;
-    }
-
-    main .site-content{
-        grid-template-columns: 100%;
-    }
-
-    footer.footer .container{
-        grid-template-columns: repeat(1, 1fr);
+    h3{
+        font-family: var(--Abel);
+        font-size: 1.2rem;
+        
     }
 
 }
 
-
-/* ---------x------- Footer ----------x---------- */
+/*              Viewport less then or equal to 860px            */
+@media only screen and (max-width: 860px){
+    .Pages{
+        margin-left: -4rem;
+    }
+    .Contact{
+        margin-left:-6rem ;
+    }
+    .about-us {
+        margin-left: 4rem;
+    }
+    .about-us .p1{
+        padding-bottom: 2rem;
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 3rem;
+    }
+    .logo img{
+        
+            width: 23%;
+            height: auto;
+          
+    }
+}
 
 
 /*---------------Viewport less than or equal to 750px----------*/
@@ -551,13 +533,193 @@ footer.footer .move-up span:hover{
     }
     .nav .nav-menu{
         margin-top: 5.3rem;
-        background-color: rgb(167, 167, 167);
+        background-color: rgb(230, 230, 230);
     }
 
     .nav .toggle-collapse{
         display:initial;
     }
+    footer.footer .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .Pages{
+        margin-left: 9rem;
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 17rem;
+    }
+    .Contact{
+        margin-left:7rem ;
+    }
+    .about-us {
+        margin-left: 2rem;
+        
+    }
+    .about-us p{
+        padding: 0rem 5rem;
+    }
+    main .site-title{
+        background-size: 50rem;
+        background-repeat: no-repeat;
+    }
+    main .site-title h1{
+        font-size: 4rem;
+        margin-top: -2rem;
+    }
+
+    main .blog{
+        margin-top: -3rem;   
+        margin-bottom: -6rem;
+        }  
 }
 
 
 /*--------x-------Viewport less than or equal to 750px----x-----*/
+
+
+/*-------------Viewport less than or equal to 660px---------*/
+@media only screen and (max-width:660px){
+    .Pages{
+        margin-left: 3rem;
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 13rem;
+    }
+    .about-us {
+        margin-left: 1rem;
+        
+    }
+    .Contact{
+        margin-left:2rem ;
+    }
+    .about-us p{
+        padding: 0rem 2rem;
+    }
+
+}
+/*-------------Viewport less than or equal to 500px---------*/
+@media only screen and (max-width:500px){
+    .Pages{
+        margin-left: 0rem;
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 10rem;
+    }
+    .about-us {
+        margin-left: 0rem;
+        
+    }
+    .Contact{
+        margin-left:0rem ;
+    }
+    .about-us p{
+        padding: 0rem 1rem;
+    }
+    .logo img{
+        
+        width: 30%;
+        height: auto;
+      
+}
+
+}
+
+/*-------------Viewport less than or equal to 430px---------*/
+@media only screen and (max-width:430px){
+    .Pages{
+        margin-left: -1rem;
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 10rem;
+    }
+    .about-us {
+        margin-left: 0rem;
+        
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 9rem;
+    }
+    .Contact{
+        margin-left:-2rem ;
+    }
+    .about-us p{
+        padding: 0rem 0rem;
+    }
+
+}
+/*-------------Viewport less than or equal to 350px---------*/
+@media only screen and (max-width:350px){
+    .Pages{
+        margin-left: -4rem;
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 10rem;
+    }
+    .about-us {
+        margin-left: 0rem;
+        
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 7rem;
+    }
+    .Contact{
+        margin-left:-5rem ;
+    }
+    .about-us p{
+        padding: 0rem 0rem;
+    }
+    main .site-title h1{
+        font-size: 3rem;
+        margin-top: -1rem;
+    }
+
+}
+/*-------------Viewport less than or equal to 320px---------*/
+@media only screen and (max-width:320px){
+    .Pages{
+        margin-left: -5rem;
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 5rem;
+    }
+    .about-us {
+        margin-left: 0rem;
+        
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 5rem;
+    }
+    .Contact{
+        margin-left:-7rem ;
+    }
+    
+    footer.footer .rights{
+         font-size: 10px; 
+    }
+
+}
+/*-------------Viewport less than or equal to 225px---------*/
+@media only screen and (max-width:225px){
+    .Pages{
+        margin-left: -7rem;
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 4rem;
+    }
+    .about-us {
+        margin-left: 0rem;
+        
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 4rem;
+    }
+    .Contact{
+        margin-left:-8rem ;
+    }
+    
+    footer.footer .rights{
+         font-size: 10px; 
+    }
+
+}
+
