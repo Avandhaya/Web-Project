@@ -1,0 +1,389 @@
+/* ----------------- Footer --------------------- */
+footer{
+    margin-left: -1rem;
+    margin-bottom: -2rem;
+}
+footer.footer{
+    background: var(--bg-color);
+    position: relative;
+    margin-top: -10px;
+    
+}
+.Pages ul{
+    list-style-type:none;
+}
+
+
+footer.footer .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+}
+
+.about-us .p1{
+    margin-bottom: -5rem;
+}
+footer.footer .container  div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+.footer-nav a{
+    text-decoration: none;
+}
+
+footer.footer .container h2{
+    
+    color: var(--white);
+    margin-left: 160px;
+    margin-top: -20px;
+    padding-top: 25px;
+    
+}
+.about-us p{
+    color:#b5b5b5;
+    margin-left: 25px;
+}
+
+.about-us .p1{
+    margin-bottom: -5rem;
+    color:#b5b5b5;
+    margin-left: 25px;
+}
+
+.Pages{
+    margin-left: 50px;
+    
+    
+}
+ .footer-nav{
+    margin-left: 8rem;
+
+    
+}
+.footer-link1 a{
+    
+    color: #b5b5b5;
+    
+}
+
+.footer-link a{
+    color:#b5b5b5;
+    
+}
+
+.footer-link{
+    margin: 1rem 0;
+    margin-left: -10px;
+}
+.footer-link1{
+    margin-bottom: -4rem;
+    margin-left: -10px;
+}
+
+.Contact h2{
+       margin-left: 30px;
+       
+}
+
+.Contact .btn{
+    padding: .5rem 2rem;
+    margin-top: 1rem;
+    margin-left: 150px;
+}
+
+.Contact a:hover{
+    color: var(--white);
+}
+.Contact a{
+    text-decoration: none;
+    color: black;
+}
+
+footer.footer .rights{
+    justify-content: center;
+    font-family: var(--Abel);
+    margin-top: 1rem;
+    color:var(--white);
+    font-size: 1rem;
+}
+
+
+
+footer.footer .move-up{
+    position: absolute;
+    right: 2%;
+    top: 50%;
+}
+
+footer.footer .move-up span{
+    color: var(--midnight);
+}
+
+footer.footer .move-up span:hover{
+    color: var(--white);
+    cursor: pointer;
+}
+/* --button---*/
+
+.btn-blog:hover{
+        
+    box-shadow: 0 8px 12px rgba(154, 159, 151, 0.2);
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);    
+}
+
+/* ---------x------- Footer ----------x---------- */
+/*              Viewport less then or equal to 1130px            */
+
+@media only screen and (max-width: 1130px){
+    
+    .Pages{
+        margin-left: -2rem;
+    }
+    .Contact{
+        margin-left:-4rem ;
+    }
+    .about-us {
+        margin-left: 2rem;
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 6rem;
+    }
+    h3{
+        font-family: var(--Abel);
+        font-size: 1.2rem;
+        
+    }
+    
+
+
+}
+
+/*              Viewport less then or equal to 860px            */
+@media only screen and (max-width: 860px){
+    .Pages{
+        margin-left: -4rem;
+    }
+    .Contact{
+        margin-left:-6rem ;
+    }
+    .about-us {
+        margin-left: 4rem;
+    }
+    .about-us .p1{
+        padding-bottom: 2rem;
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 3rem;
+    }
+    .logo img{
+        
+            width: 23%;
+            height: auto;
+          
+    }
+    
+}
+
+
+
+/*---------------Viewport less than or equal to 750px----------*/
+
+@media only screen and (max-width:750px){
+    /*when equal to 750px menu go to left side colum;(collapse)*/
+    .nav .nav-menu, .nav .nav-items{
+        
+        margin-top: -2rem;
+        flex-direction:column;
+    }
+    .nav .nav-menu{
+        margin-top: 5.3rem;
+        background-color: rgb(230, 230, 230);
+    }
+
+    .nav .toggle-collapse{
+        display:initial;
+    }
+    footer.footer .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .Pages{
+        margin-left: 9rem;
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 17rem;
+    }
+    .Contact{
+        margin-left:7rem ;
+    }
+    .about-us {
+        margin-left: 2rem;
+        
+    }
+    .about-us p{
+        padding: 0rem 5rem;
+    }
+    main .site-title{
+        background-size: 50rem;
+        background-repeat: no-repeat;
+    }
+    main .site-title h1{
+        font-size: 4rem;
+        margin-top: -2rem;
+    }
+
+    main .blog{
+        margin-top: -3rem;   
+        margin-bottom: -6rem;
+        }  
+}
+
+
+/*--------x-------Viewport less than or equal to 750px----x-----*/
+
+
+/*-------------Viewport less than or equal to 660px---------*/
+@media only screen and (max-width:660px){
+    .Pages{
+        margin-left: 3rem;
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 13rem;
+    }
+    .about-us {
+        margin-left: 1rem;
+        
+    }
+    .Contact{
+        margin-left:2rem ;
+    }
+    .about-us p{
+        padding: 0rem 2rem;
+    }
+
+}
+/*-------------Viewport less than or equal to 500px---------*/
+@media only screen and (max-width:500px){
+    .Pages{
+        margin-left: 0rem;
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 10rem;
+    }
+    .about-us {
+        margin-left: 0rem;
+        
+    }
+    .Contact{
+        margin-left:0rem ;
+    }
+    .about-us p{
+        padding: 0rem 1rem;
+    }
+    .logo img{
+        
+        width: 30%;
+        height: auto;
+      
+}
+
+}
+
+/*-------------Viewport less than or equal to 430px---------*/
+@media only screen and (max-width:430px){
+    .Pages{
+        margin-left: -1rem;
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 10rem;
+    }
+    .about-us {
+        margin-left: 0rem;
+        
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 9rem;
+    }
+    .Contact{
+        margin-left:-2rem ;
+    }
+    .about-us p{
+        padding: 0rem 0rem;
+    }
+
+}
+/*-------------Viewport less than or equal to 350px---------*/
+@media only screen and (max-width:350px){
+    .Pages{
+        margin-left: -4rem;
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 10rem;
+    }
+    .about-us {
+        margin-left: 0rem;
+        
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 7rem;
+    }
+    .Contact{
+        margin-left:-5rem ;
+    }
+    .about-us p{
+        padding: 0rem 0rem;
+    }
+    main .site-title h1{
+        font-size: 3rem;
+        margin-top: -1rem;
+    }
+
+}
+/*-------------Viewport less than or equal to 320px---------*/
+@media only screen and (max-width:320px){
+    .Pages{
+        margin-left: -3rem;
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 6rem;
+    }
+    .about-us {
+        margin-left: 0rem;
+        
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 6rem;
+    }
+    .Contact{
+        margin-left:-4rem ;
+    }
+    
+    footer.footer .rights{
+         font-size: 10px; 
+    }
+
+}
+/*-------------Viewport less than or equal to 225px---------*/
+@media only screen and (max-width:225px){
+    .Pages{
+        margin-left: -7rem;
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 4rem;
+    }
+    .about-us {
+        margin-left: 0rem;
+        
+    }
+    footer.footer .container .about-us h2{
+        margin-left: 4rem;
+    }
+    .Contact{
+        margin-left:-8rem ;
+    }
+    
+    footer.footer .rights{
+         font-size: 10px; 
+    }
+
+}
+

@@ -1,0 +1,244 @@
+:root{
+
+    /*Theme colors*/
+    --text-gray:#3f4954;
+    --text-light:#686666da;
+    --bg-color:#0f0f0f;
+    --white: #ffffff;
+    --midnight:#104f55;
+
+    /* Gradient color  */
+
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+    /*---------theme font-family--------*/
+    --Abel:'Abel',cursive;
+    --Anton:'Anton',cursive;
+    --Josefin:'Josefin',cursive;
+    --Lexend:'Lexend',cursive;
+    --Livvic:'Livvic', cursive;
+}
+
+/*-------------------------Global Classes-----------------------*/
+.nav-items a{
+    text-decoration: none;
+    color:var(--text-gray);
+    
+    
+}
+.link ul{
+list-style-type:none;
+}
+
+
+.flex-row{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+ .nav-content ul{
+     list-style-type: none;
+ }
+ 
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding:1rem 3rem;
+    font-size:1rem;
+    font-family: var(--Abel);
+    cursor: pointer;
+    color:#4895ef;
+    
+    
+    
+}
+.container{
+    margin: 0 5vw;
+}
+
+
+
+
+
+
+/*------------x-------------Global Classes-------x------------*/
+
+/*--------------------------navBar----------------------*/
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+   
+    transition: background-color .5s ease;
+    
+    z-index: 1000;
+}
+/* we can use header padding,margin*/
+.container{
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0rem 0rem;
+}
+/*x we can use header padding,margin*/
+
+.nav{
+    
+    padding:0rem 0rem 0rem 0rem;
+    height: 5.1rem;
+    margin-top: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 1s ease;
+    transition: margin .5s ease;
+    box-shadow: 0 10px 12px rgba(154, 159, 151, 0.2);
+    
+   
+    
+    
+    /* when click the toggle icon diplay down one by one*/
+    transition: height 1s ease-in-out;
+    }
+
+    .nav .nav-menu{
+        
+        justify-content: space-between;  
+    }
+
+    .nav .nav-items .nav-link a{
+        color: var(--bg-color);
+    }
+/*-------------collapse-----------*/
+    .nav .toggle-collapse{
+        position:absolute;
+        top:0%;
+        width:90%;
+        cursor: pointer;
+        display:none;
+    }
+
+    .nav .toggle-collapse .toggle-icons{
+        display:flex;
+        justify-content: flex-end;
+        padding: 1.7rem 0;
+    }
+
+    .nav .toggle-collapse .toggle-icons i{
+        font-size: 1.4rem;
+        color: var(--bg-color)
+        
+    }
+
+    .collapse{
+        height: 30rem;
+    }
+    /*------x-------collapse------x-----*/
+    .nav .nav-items{
+        
+        display:flex;
+        margin:0;
+    }
+
+ 
+    .nav .nav-items .nav-link{
+        
+        padding:2rem 1rem 2rem 1rem;
+        
+        font-size: 1.1rem;
+        position:relative;
+        font-family:var(--Josefi);
+        font-size: 1.1rem;
+    }
+    .nav-link::after{
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        bottom: 3px;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform .5s ease;
+    }
+    
+    .nav-link:hover::after{
+        transform: scaleX(1);
+    }
+
+    /*------when mouse click navigation items, change bg color-----*/ 
+    .nav .nav-items .nav-link:hover{
+        
+        background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+        
+        
+    }
+        /*----when mouse click navigation items change text color(white)-----*/
+    .nav .nav-items .nav-link:hover a{
+        color: var(--text-gray);
+    }
+/*-------x----when mouse click navigation items, change bg color-------x-----*/
+
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    margin-right: 7rem;
+    color:var(--white);
+    display: block;
+    font-family:var(--Lexendl);
+    font-size:1.6rem;
+    
+}
+
+/*Apply styles after scroll*/
+/*Apply styles after scroll*/
+.scrolling-active{
+    background-color: white;
+    box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+}
+
+.scrolling-active .nav{
+    height: 4.5rem;
+    margin-top: -1rem;
+    
+}
+.scrolling-active .nav .nav-items .nav-link{
+    padding: 1.7rem 1rem;
+}
+
+.scrolling-active .nav .nav-items .nav-link a{
+    color: var(--text-gray);
+}
+.scrolling-active .nav a{
+    color: #313131;
+}
+.scrolling-active .nav img{
+    width: 20%;
+    height: auto;
+    transition: width .5s ease;
+}
+
+
+
+.scrolling-active .nav-link::after{
+    background-color: #313131;
+    
+}
+
+/*Apply styles after scroll end*/
+
+
+    .logo{
+        
+        position:absolute;
+        
+        top: 0px;
+        margin-top: .5rem;
+        margin-left: 1rem;
+        
+    }
+    
+/*--------------------------navBar----------------------*/
